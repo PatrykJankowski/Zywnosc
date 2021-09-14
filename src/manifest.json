@@ -1,0 +1,12 @@
+{
+  "name": "softcraft",
+  "short_name": "softcraft",
+  "icons": [{
+    "src": "/softcraft/wp-content/themes/softcraft/img/logo-512x512.png",
+    "sizes": "1912x318",
+    "type": "image/png"
+  }],
+  "start_url": "/",  "display": "standalone",
+  "background_color": "#007FFF",
+  "theme_color": "#007FFF"
+}

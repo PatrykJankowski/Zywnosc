@@ -1,0 +1,61 @@
+/* Spacing */
+$s: 20px;
+$m: 30px;
+$l: 60px;
+$xl: 120px;
+
+
+/* Sizes */
+$navigation-height: 80px;
+$navigation-height-mobile: 70px;
+
+
+/* Colors */
+$green: #83B345;
+$green-light: #DBEDD5;
+$white: #FFF;
+$gray1: #fafafb;
+$gray2: #f7f8fa;
+$black: #444;
+
+$primary: $green;
+$secondary: $green-light;
+
+$text-color: $black;
+$text-color-reverted: $white;
+
+$border-black: $black;
+$border-white: $white;
+
+
+/* Fonts */
+$text-size: (18rem/16);
+
+$h1-size: (46rem/16);
+$h2-size: (40rem/16);
+$h3-size: (24rem/16);
+$h4-size: (18rem/16);
+$h5-size: (16rem/16);
+
+
+/* Resolutions */
+$desktop: 1024px;
+$tablet: 768px;
+
+
+// Mixins
+@mixin for-size($size) {
+    @if $size == tablet {
+        @media (min-width: 768px) { @content; }
+    } @else if $size == tablet-landscape {
+        @media (min-width: 992px) { @content; }
+    } @else if $size == desktop {
+        @media (min-width: 1200px) { @content; }
+    } @else if $size == desktop-wide {
+        @media (min-width: 1921px) { @content; }
+    }
+}
+
+@mixin font-size($fontSize) {
+    font-size: ($fontSize / 16) + rem;
+}

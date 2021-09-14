@@ -1,0 +1,11 @@
+.footer {
+  background: $primary;
+
+  &__menu {
+    a {
+      display: flex;
+      font-size: 1rem;
+      color: $white;
+    }
+  }
+}

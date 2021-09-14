@@ -1,0 +1,16 @@
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+  }
+
+  &__right {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  &__button {
+    display: inline-flex;
+    margin-left: $m;
+  }
+}

@@ -1,0 +1,21 @@
+.woocommerce-loop-product__title {
+    color: $text-color;
+    text-align: center;
+    font-weight: 400;
+    font-family: Nunito, sans-serif;
+    @include font-size(16);
+    line-height: 22px;
+}
+
+.product .woocommerce-Price-amount.amount {
+    display: flex;
+    justify-content: center;
+    font-family: Spectral, sans-serif;
+    font-weight: 700;
+    @include font-size(18);
+    line-height: 27px;
+}
+
+.price {
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+.mini-cart {
+  display: inline-flex;
+  position: relative;
+
+  &__counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 12px;
+    top: -14px;
+    border-radius: 50%;
+    background: #DBEDD5;
+    width: 24px;
+    height: 24px;
+    @include font-size(12);
+    color: $text-color;
+  }
+
+  &__price {
+    margin-left: 15px;
+    color: $text-color;
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "zdrowa-zywnosc",
+  "version": "1.0.0",
+  "description": "Zdrowa żywność – sklep",
+  "main": "''",
+  "dependencies": {
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-hb": "^8.0.0",
+    "npm": "^7.20.6"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-image": "^6.2.1",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify-es": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "gulp-webp": "^4.0.1",
+    "node-sass": "^6.0.1"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykJankowski/ZdrowaZywnosc.git"
+  },
+  "author": "Softcraft – Patryk Jankowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrykJankowski/ZdrowaZywnosc/issues"
+  },
+  "homepage": "https://github.com/PatrykJankowski/ZdrowaZywnosc#readme"
+}

@@ -1,0 +1,21 @@
+.woocommerce a.button.add_to_cart_button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    //padding: 0 40px;
+    border: none;
+    border-radius: 0;
+    background: $secondary;
+    color: $black;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s all;
+
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    @include font-size(16);
+    line-height: 22px;
+}

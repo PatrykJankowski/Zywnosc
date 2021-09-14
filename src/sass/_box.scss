@@ -1,0 +1,36 @@
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  margin: $m 0;
+  background: url(img/box1.webp) center;
+  background-size: cover;
+  color: $white;
+
+  &--box-2 {
+    background-image: url(img/box2.webp);
+  }
+
+  &__header {
+    font-family: Spectral, sans-serif;
+    @include font-size(40);
+    line-height: 60px;
+    font-weight: 700;
+    margin: $s 0;
+  }
+
+  &__link {
+    border-bottom: 1px solid $white;
+    padding-bottom: 2px;
+    font-family: Spectral, sans-serif;
+    @include font-size(18);
+    font-weight: 700;
+    color: $white;
+  }
+
+  p {
+    margin: 0;
+  }
+}
