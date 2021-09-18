@@ -3,6 +3,7 @@ body {
   @include font-size(16);
   font-family: Nunito, sans-serif;
   font-weight: 400;
+  color: $text-color;
   line-height: 22px;
 }
 
@@ -252,4 +253,14 @@ body.woocommerce-cart table.cart td.actions .coupon .input-text {
 
 .woocommerce table.shop_table td a {
   color: $text-color;
+}
+
+
+
+
+
+
+
+.widget_product_categories .wcsca-icon {
+  margin: $s;
 }

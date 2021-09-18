@@ -117,3 +117,92 @@ function wc_refresh_mini_cart_count($fragments){
 
 
 
+add_action('wp_ajax_myfilter', 'filter_function'); // wp_ajax_{ACTION HERE}
+add_action('wp_ajax_nopriv_myfilter', 'filter_function');
+
+function filter_function(){
+    $args = array(
+        'orderby' => 'date', // we will sort posts by date
+        'order'	=> $_POST['date'] // ASC or DESC
+    );
+
+    // for taxonomies / categories
+    if(isset($_POST['categoryfilter'])) {
+        $args['tax_query'] = array(
+            'relation' => 'OR',
+        );
+
+        foreach ($_POST['categoryfilter'] as $t) {
+            $args['tax_query'][] = [
+                'taxonomy' => 'kategorie_przepisow',
+                'terms'    => $t,
+                'field'    => 'id',
+            ];
+        }
+    } else {
+        $args['tax_query'][] = array(
+            array(
+                'taxonomy' => 'kategorie_przepisow',
+                'field'    => 'id',
+                'hide_empty' => false,
+            )
+        );
+    }
+
+    // create $args['meta_query'] array if one of the following fields is filled
+    if( isset( $_POST['featured_image'] ) && $_POST['featured_image'] == 'on' )
+        $args['meta_query'] = array( 'relation'=>'AND' ); // AND means that all conditions of meta_query should be true
+
+
+    // if post thumbnail is set
+    if( isset( $_POST['featured_image'] ) && $_POST['featured_image'] == 'on' )
+        $args['meta_query'][] = array(
+            'key' => '_thumbnail_id',
+            'compare' => 'EXISTS'
+        );
+    // if you want to use multiple checkboxed, just duplicate the above 5 lines for each checkbox
+
+
+    $query = new WP_Query( $args );
+    $counter = 1;
+
+    while ($query->have_posts()) {
+        $query->the_post();
+
+        if ($counter == 1 or ($counter - 1) % 4 == 0) {
+            echo '<div class="row">';
+        }
+
+            echo '<div class="col-xl-3">
+                <article class="blog__post">
+                    <img src="';
+            echo wp_get_attachment_url(get_post_thumbnail_id($query->ID), 'thumbnail');
+            echo '" class="blog__image" alt="';
+            echo apply_filters('the_title', $query->post->post_title);
+            echo '">
+                    <div class="blog__content">
+                        <div class="blog__date">';
+            echo apply_filters('the_date', mysql2date('d/m/Y', $query->post->post_date));
+            echo '</div>
+                        <h3 class="blog__title">';
+            echo apply_filters('the_title', $query->post->post_title);
+            echo '</h3>';
+            echo wp_trim_words(wp_strip_all_tags(apply_filters('the_content', $query->post->post_content)), 30, '...');
+            echo '<a href="';
+            echo the_permalink();
+            echo '" class="blog__link">Read more...</a>
+                    </div>
+                </article>
+            </div>';
+
+            if ($counter % 4 == 0) {
+                echo '</div>';
+            }
+            $counter++;
+
+
+    wp_reset_postdata();
+    }
+
+    die();
+}

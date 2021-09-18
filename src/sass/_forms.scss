@@ -45,13 +45,12 @@ textarea {
 
 select {
   width: 100%;
-  padding: 20px 30px;
+  padding: $s;
   margin-bottom: 20px;
   font-size: 18px;
   background: transparent;
   border: 1px solid #6E6F71;
-  border-radius: 36px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Nunito, sans-serif;
   color: #6E6F71;
 
   display: block;

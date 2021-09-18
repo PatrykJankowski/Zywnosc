@@ -13,10 +13,18 @@
   //margin-top: 60px;
 
   &__bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 60px;
     width: 100%;
-    display: block;
     background: #43A628;
+    color: $white;
+    text-align: center;
+    font-family: Spectral, sans-serif;
+    font-weight: 700;
+    @include font-size(22);
   }
 
   &__logo-wrapper {

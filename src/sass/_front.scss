@@ -1,0 +1,31 @@
+.front-page-info-box {
+  display: flex;
+  flex-direction: column;
+
+  svg {
+    margin: 0 auto 10px;
+  }
+}
+
+
+.article {
+  margin-top: 10px;
+
+  &__date {
+    margin: 0 0 10px 0;
+  }
+
+  &__header {
+    margin: 0;
+  }
+
+  &__content {
+    margin: 20px 0 0;
+  }
+
+  &__more {
+    display: inline-block;
+    margin-top: $s;
+    color: $text-color;
+  }
+}
