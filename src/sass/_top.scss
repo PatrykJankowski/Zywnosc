@@ -1,0 +1,23 @@
+.top {
+  position: relative;
+  display: flex;
+  height: 300px;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    max-width: 800px;
+    color: $white;
+    @include font-size(46);
+    line-height: 50px;
+    font-weight: 600;
+    font-family: Spectral, sans-serif;
+  }
+}

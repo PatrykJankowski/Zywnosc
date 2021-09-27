@@ -15,6 +15,7 @@
 
   &__header {
     font-family: Spectral, sans-serif;
+    text-align: center;
     @include font-size(40);
     line-height: 60px;
     font-weight: 700;

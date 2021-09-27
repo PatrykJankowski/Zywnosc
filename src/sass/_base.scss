@@ -9,6 +9,7 @@ body {
 
 a {
   text-decoration: none;
+  color: $text-color;
 }
 
 h1 {
@@ -17,6 +18,7 @@ h1 {
 }
 
 h2 {
+  font-family: Spectral, sans-serif;
   font-size: $h2-size;
   line-height: 1;
   margin: 0;
@@ -33,6 +35,14 @@ h4 {
   @include font-size(24);
   line-height: 30px;
   color: $text-color;
+}
+
+h5 {
+  margin: 0;
+  font-family: Spectral, sans-serif;
+  font-weight: 700;
+  @include font-size(18);
+  line-height: 1;
 }
 
 ul {
@@ -135,8 +145,15 @@ body .woocommerce a.remove {
 
 
 
-.woocommerce .cart .quantity .qty {
-  width: 96px;
+.woocommerce .cart {
+  .quantity .qty {
+    width: 96px;
+  }
+
+  .tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart.no-txt {
+    height: 48px;
+    margin: 0;
+  }
 }
 
 
@@ -263,4 +280,140 @@ body.woocommerce-cart table.cart td.actions .coupon .input-text {
 
 .widget_product_categories .wcsca-icon {
   margin: $s;
+}
+
+
+
+
+
+
+body .woocommerce-checkout #payment {
+  background: none;
+}
+
+
+
+.woocommerce-checkout #payment {
+  div.form-row.place-order {
+    padding: 0;
+  }
+
+  ul.payment_methods li input {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+body .woocommerce-checkout #payment ul.payment_methods {
+  padding-left: 0;
+  padding-right: 0;
+
+  .wc_payment_method {
+    position: relative;
+    margin-bottom: $s;
+
+    label {
+      position: absolute;
+    }
+  }
+}
+
+
+
+.wc-bacs-bank-details-heading, .woocommerce-order-details__title {
+  margin-bottom: $s;
+}
+
+.woocommerce-thankyou-order-received {
+  margin-bottom: $m;
+  font-weight: 700;
+}
+
+
+
+.product .summary.entry-summary {
+  .woocommerce-Price-amount.amount {
+    justify-content: flex-start;
+  }
+
+  .product_meta {
+    .posted_in {
+      font-weight: 700;
+      
+      a {
+        font-weight: 400;
+        color: $text-color;
+      }
+    }
+  }
+}
+body.woocommerce div.product .woocommerce-tabs {
+  ul.tabs {
+    padding: 0;
+    overflow: unset;
+
+    &:before {
+      content: none;
+    }
+
+    li {
+      margin: 0 $s 0 0;
+      padding: 0;
+      border: 0;
+      background: none;
+
+      &:before, &:after {
+        border: none;
+        box-shadow: none;
+      }
+
+      &.active {
+        color: $primary;
+      }
+    }
+  }
+
+  .woocommerce-Tabs-panel h2 {
+    margin-bottom: 10px;
+  }
+
+  #review_form #respond {
+    .comment-form-rating {
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+
+      p.stars {
+        display: inline-block;
+        margin: 0 0 10px;
+
+        a {
+          margin: 0 -3px;
+          width: 2rem;
+          @include font-size(22);
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  .wpfp-span {
+    display: none;
+  }
+}
+
+
+.tinv-wishlist .product-remove button:hover {
+  background-color: #ff8d8d;
+}
+
+body {
+  .woocommerce-info {
+    border-top-color: $primary;
+
+    &:before {
+      color: $primary;
+    }
+  }
 }

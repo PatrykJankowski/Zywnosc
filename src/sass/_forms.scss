@@ -21,7 +21,7 @@ input {
   margin-bottom: 20px;
   @include font-size(16);
   background: transparent;
-  border: 1px solid #6E6F71;
+  border: 1px solid #F1DED3;
   font-family: Nunito, sans-serif;
   color: $text-color;
 
@@ -36,10 +36,9 @@ textarea {
   margin-bottom: $s;
   padding: 20px 30px;
   background: transparent;
-  border: 1px solid #6E6F71;
-  border-radius: 36px;
+  border: 1px solid #F1DED3;
   font-size: 18px;
-  font-family: "Open Sans", sans-serif;
+  font-family: Nunito, sans-serif;
   color: #6E6F71;
 }
 
@@ -49,7 +48,7 @@ select {
   margin-bottom: 20px;
   font-size: 18px;
   background: transparent;
-  border: 1px solid #6E6F71;
+  border: 1px solid #F1DED3;
   font-family: Nunito, sans-serif;
   color: #6E6F71;
 
@@ -63,6 +62,10 @@ select {
   -webkit-appearance: none;
   appearance: none;
 
+  &.orderby {
+    padding: 10px;
+    font-size: 1rem;
+  }
 
   &:hover {
     border-color: #888;
@@ -70,8 +73,8 @@ select {
 
   &:focus {
     border-color: #aaa;
-    box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
-    box-shadow: 0 0 0 3px -moz-mac-focusring;
+    //box-shadow: 0 0 1px 1px rgba(59, 153, 252, .7);
+    //box-shadow: 0 0 0 1px -moz-mac-focusring;
     color: #222;
     outline: none;
   }
@@ -107,4 +110,70 @@ select {
 
 .validation-error {
   border-color: red;
+}
+
+
+body .select2-container--default .select2-selection--single {
+  height: 100%;
+  border: 1px solid $text-color;
+  border-radius: 0;
+
+  .select2-selection__rendered {
+    height: 48px;
+    display: flex;
+    align-items: center;
+  }
+
+  .select2-selection__arrow {
+    height: 48px;
+  }
+}
+
+
+body .woocommerce form .form-row label {
+  font-weight: 700;
+}
+
+input#rememberme {
+  width: auto;
+  height: auto;
+  margin: 0 8px 0 0;
+}
+
+body .woocommerce.tinv-wishlist {
+  table input[type="checkbox"] {
+    width: auto;
+    height: auto;
+    margin: 0;
+  }
+
+  .wishlist_item {
+    .product-name {
+      a {
+        color: $text-color;
+      }
+    }
+
+    .stock.in-stock {
+      margin: 0;
+    }
+
+    .product-action {
+      button.button.alt {
+        width: 180px;
+        height: 48px;
+        background: $primary;
+      }
+    }
+  }
+
+  .tinvwl-input-group .form-control {
+    height: 36px;
+    color: $text-color;
+    padding: 0 10px;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }

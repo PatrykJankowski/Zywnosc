@@ -1,3 +1,5 @@
+<?php /* Template Name: Przepisy */ ?>
+
 <?php get_header(); ?>
 
 <section class="recipes__top">
@@ -25,7 +27,6 @@
     </div>
 </section>
 
-<?php if (is_singular( array('przepisy'))): ?>
 <section class="">
     <div class="container">
         <div class="row">
@@ -38,7 +39,6 @@
         </div>
     </div>
 </section>
-<?php endif; ?>
 
 <section class="section">
     <div class="container">

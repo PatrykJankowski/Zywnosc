@@ -90,7 +90,7 @@
                         <?php wp_nav_menu(array('theme_location' => 'nav-menu', 'container' => false)); ?>
                     </nav>
                     <nav id="navbar__nav-mobile" class="navbar__nav-mobile">
-                        <?php wp_nav_menu(array('theme_location' => 'nav-menu', 'container' => false)); ?>
+                        <?php wp_nav_menu(array('theme_location' => 'nav-menu-mobile', 'container' => false)); ?>
                     </nav>
                     <div id="navbar__toggle" class="navbar__toggle" onclick="slideToggle()"><i class="navbar__toggle-icon"></i></div>
                 </div>

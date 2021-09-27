@@ -1,6 +1,5 @@
 .woocommerce a.button.add_to_cart_button {
     display: flex;
-
     align-items: center;
     justify-content: center;
     height: 48px;
@@ -9,6 +8,26 @@
     border-radius: 0;
     background: $secondary;
     color: $black;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s all;
+    font-family: Nunito, sans-serif;
+    font-weight: 400;
+    @include font-size(16);
+    line-height: 22px;
+}
+
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    border: 1px solid $text-color;
+    border-radius: 28px;
+    background: transparent;
+    color: $text-color;
     font-size: 18px;
     text-align: center;
     cursor: pointer;

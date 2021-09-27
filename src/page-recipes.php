@@ -15,8 +15,19 @@ $args = array(
 $posts = new WP_Query($args);
 ?>
 
+<section class="">
+    <div class="top">
+        <img src="/sklep/wp-content/themes/zywnosc/img/przepisy.webp" style="width:100%">
+        <div class="container container-slider">
+            <div class="text">
+                <span>Przepisy</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-<section class="section-paddings-xxl">
+
+<section class="section">
     <div class="container">
 
         <div class="row">
@@ -33,7 +44,7 @@ $posts = new WP_Query($args);
                     endif;
                     ?>
 
-                    <div id="loader"></div>
+                    <div id="loader" style="margin-top: 10px"></div>
                     <input type="hidden" name="action" value="myfilter">
                 </form>
             </div>
@@ -56,7 +67,7 @@ $posts = new WP_Query($args);
                                         <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d/m/Y', $posts->post->post_date)); ?></div>
                                         <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
                                         <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 30, '...'); ?>
-                                        <a href="<?php echo the_permalink(); ?>" class="blog__link">Read more...</a>
+                                        <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
                                     </div>
                                 </article>
                             </div>

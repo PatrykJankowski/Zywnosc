@@ -1,0 +1,49 @@
+.contact {
+
+  &__wrapper {
+    background: #F2F9F0;
+    padding: 40px $s;
+    text-align: center;
+  }
+
+  &__header {
+
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: $s 0;
+
+    svg {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__contact-title {
+    display: flex;
+    font-weight: 700;
+  }
+
+  &__contact-data {
+    display: flex;
+  }
+
+  form {
+    margin-top: $l;
+
+    label {
+      font-family: Spectral, sans-serif;
+      @include font-size(18);
+      font-weight: 700;
+    }
+  }
+}

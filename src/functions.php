@@ -30,6 +30,7 @@ function setup() {
     //if (!isset($content_width)) $content_width = 640;
     register_nav_menu('nav-menu',__('Menu nawigacyjne'));
     register_nav_menu('nav-menu-mobile',__('Menu mobilne'));
+    register_nav_menu('footer-menu',__('Menu w stopce'));
 
     add_theme_support( 'woocommerce');
     add_theme_support( 'wc-product-gallery-zoom' );
@@ -190,7 +191,7 @@ function filter_function(){
             echo wp_trim_words(wp_strip_all_tags(apply_filters('the_content', $query->post->post_content)), 30, '...');
             echo '<a href="';
             echo the_permalink();
-            echo '" class="blog__link">Read more...</a>
+            echo '" class="blog__link">Zobacz przepis...</a>
                     </div>
                 </article>
             </div>';

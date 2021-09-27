@@ -1,11 +1,55 @@
 .footer {
+  padding: $l 0 $s;
   background: $primary;
+  position: relative;
 
-  &__menu {
+  &__bg1 {
+    position: absolute;
+    top: 0;
+    left: 50px;
+  }
+
+  &__bg2 {
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+  }
+
+  &__bg3 {
+    position: absolute;
+    bottom: 100px;
+    right: 500px;
+  }
+
+  &__contact-block {
+    display: flex;
+    align-items: center;
+    margin-top: $m;
+
+    svg {
+      margin-right: $s;
+    }
+  }
+
+  &__contact-info {
+    display: inline-flex;
+    flex-direction: column;
+    color: $white;
+  }
+
+  &__contact-title {
+    font-weight: 700;
+  }
+
+  .menu {
+    li {
+      list-style: none;
+    }
     a {
       display: flex;
       font-size: 1rem;
       color: $white;
+      margin-bottom: 2px;
     }
   }
 }

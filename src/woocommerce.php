@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 
+<section class="">
+    <div class="top">
+        <img src="/sklep/wp-content/themes/zywnosc/img/przepisy.webp" style="width:100%">
+        <div class="container container-slider">
+            <div class="text">
+                <span>Sklep</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <section class="section">
     <div class="container">
         <div class="row">

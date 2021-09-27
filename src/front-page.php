@@ -55,14 +55,14 @@
                 <div class="box">
                     <p>Przepisy</p>
                     <h3 class="box__header">Inspiracje kulinarne</h3>
-                    <a class="box__link" href="#">Zobacz przepisy</a>
+                    <a class="box__link" href="przepisy">Zobacz przepisy</a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="box box--box-2">
                     <p>Sklep</p>
                     <h3 class="box__header">Naturalna pielęgnacja</h3>
-                    <a class="box__link" href="#">Idź do sklepu</a>
+                    <a class="box__link" href="kategoria-produktu/kosmetyki-naturalne/">Idź do sklepu</a>
                 </div>
             </div>
         </div>
@@ -215,10 +215,6 @@
         </div>
     </div>
 </section>
-
-
-
-
 
 <script>
     var slideIndex = 1;
