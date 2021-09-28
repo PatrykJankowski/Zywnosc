@@ -14,6 +14,7 @@ a {
 
 h1 {
   font-size: $h1-size;
+  line-height: 1;
   margin: $s 0;
 }
 
@@ -398,9 +399,22 @@ body.woocommerce div.product .woocommerce-tabs {
     }
   }
 
-  .wpfp-span {
+  /*.wpfp-span {
     display: none;
-  }
+
+    ul {
+      list-style: none;
+    }
+  }*/
+}
+
+.simplefavorite-button, .simplefavorites-clear {
+  display: inline-block;
+  margin-top: $s;
+  padding: 6px;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 1px;
 }
 
 
@@ -416,4 +430,32 @@ body {
       color: $primary;
     }
   }
+}
+
+
+.woocommerce-MyAccount-navigation-link {
+  @include font-size(20);
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.woocommerce-Address-title.title {
+  display: flex;
+  flex-direction: column;
+}
+
+body.woocommerce-account .addresses .title .edit {
+  display: inline-block;
+  float: none;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.favorites-list > li > p > a {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+.page-title {
+  margin-top: 0;
 }
