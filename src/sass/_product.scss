@@ -14,8 +14,37 @@
     font-weight: 700;
     @include font-size(18);
     line-height: 27px;
+    color: #43A628;
+}
+
+.product del .woocommerce-Price-amount.amount {
+    @include font-size(16);
 }
 
 .price {
     text-align: center;
+}
+
+body .woocommerce ul.products li.product .onsale, body .woocommerce span.onsale {
+    background-color: unset;
+    color: red;
+    margin-right: 0;
+    margin-left: 5px;
+    left: 0;
+    right: auto;
+}
+
+body .products .product .tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 3px 0 0;
+    position: static;
+}
+
+
+//details gallery
+.pswp__bg {
+    opacity: .7 !important;
 }

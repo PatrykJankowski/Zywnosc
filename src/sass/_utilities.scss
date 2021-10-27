@@ -30,6 +30,14 @@
   padding-bottom: 100px;
 }
 
+.pt-60 {
+  padding-top: 60px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
 .bg-gray1 {
   background-color: $gray1;
 }
@@ -81,4 +89,10 @@
 
 .text-white {
   color: $white;
+}
+
+.d-flex-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

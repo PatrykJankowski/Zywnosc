@@ -69,7 +69,7 @@
     </div>
 </section>
 
-<section class="pt-100 pb-100 bg-gray1">
+<section class="pt-100 pb-60 bg-gray1">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -84,7 +84,7 @@
     </div>
 </section>
 
-<section class="pt-100 pb-100">
+<section class="pt-100 pb-60">
     <div class="container">
         <div class="row">
             <div class="col">

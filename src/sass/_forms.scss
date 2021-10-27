@@ -21,7 +21,7 @@ input {
   margin-bottom: 20px;
   @include font-size(16);
   background: transparent;
-  border: 1px solid #F1DED3;
+  border: 1px solid #EEF2F5;
   font-family: Nunito, sans-serif;
   color: $text-color;
 
@@ -36,7 +36,7 @@ textarea {
   margin-bottom: $s;
   padding: 20px 30px;
   background: transparent;
-  border: 1px solid #F1DED3;
+  border: 1px solid #EEF2F5;
   font-size: 18px;
   font-family: Nunito, sans-serif;
   color: #6E6F71;
@@ -48,7 +48,7 @@ select {
   margin-bottom: 20px;
   font-size: 18px;
   background: transparent;
-  border: 1px solid #F1DED3;
+  border: 1px solid #EEF2F5;
   font-family: Nunito, sans-serif;
   color: #6E6F71;
 

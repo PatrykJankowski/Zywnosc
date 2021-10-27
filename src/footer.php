@@ -1,27 +1,27 @@
-    <section class="pt-100 pb-100" style="background: #FBFBFC">
+    <section class="pt-60 pb-60" style="background: #FBFBFC">
         <div class="container">
             <div class="row">
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center">GRATIS</h5>
                     <p class="text-center">Dostawa od 250 zł</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center">ZWROT</h5>
                     <p class="text-center">14 dni na zwrot towaru</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center">7,99 zł</h5>
                     <p class="text-center">Paczka w RUCHu</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center">10,99</h5>
                     <p class="text-center">InPost Paczkomaty 24/7</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center">10,99 zł / 15,99 zł</h5>
                     <p class="text-center">Kurier Poczta Polska / Kurier DPD / DHL</p>
                 </div>
-                <div class="col-2">
+                <div class="col-sm-2 d-flex-centered">
                     <h5 class="text-center"">Dostawa</h5>
                     <p class="text-center">Gratis od 250 zł</p>
                 </div>

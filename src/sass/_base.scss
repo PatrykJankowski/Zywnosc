@@ -87,7 +87,7 @@ body .woocommerce a.remove {
       display: none;
       position: absolute;
       top: 0;
-      left: 0;
+      right: 0;
     }
 
     .tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before {
@@ -197,7 +197,7 @@ body .woocommerce a.remove {
 
   .current-cat, .current-cat-parent {
     > a {
-      color: $green;
+      color: #43A628;
       font-weight: 700;
     }
   }
@@ -459,3 +459,10 @@ body.woocommerce-account .addresses .title .edit {
 .page-title {
   margin-top: 0;
 }
+
+
+body .woocommerce ul.products li.product a img {
+  height: 260px;
+  object-fit: cover;
+}
+
