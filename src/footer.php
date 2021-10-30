@@ -1,28 +1,28 @@
     <section class="pt-60 pb-60" style="background: #FBFBFC">
         <div class="container">
             <div class="row">
-                <div class="col-sm-2 d-flex-centered">
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
                     <h5 class="text-center">GRATIS</h5>
                     <p class="text-center">Dostawa od 250 zł</p>
                 </div>
-                <div class="col-sm-2 d-flex-centered">
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
                     <h5 class="text-center">ZWROT</h5>
                     <p class="text-center">14 dni na zwrot towaru</p>
                 </div>
-                <div class="col-sm-2 d-flex-centered">
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
                     <h5 class="text-center">7,99 zł</h5>
                     <p class="text-center">Paczka w RUCHu</p>
                 </div>
-                <div class="col-sm-2 d-flex-centered">
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
                     <h5 class="text-center">10,99</h5>
                     <p class="text-center">InPost Paczkomaty 24/7</p>
                 </div>
-                <div class="col-sm-2 d-flex-centered">
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
                     <h5 class="text-center">10,99 zł / 15,99 zł</h5>
                     <p class="text-center">Kurier Poczta Polska / Kurier DPD / DHL</p>
                 </div>
-                <div class="col-sm-2 d-flex-centered">
-                    <h5 class="text-center"">Dostawa</h5>
+                <div class="col-sm-4 col-lg-2 d-flex-centered">
+                    <h5 class="text-center">Dostawa</h5>
                     <p class="text-center">Gratis od 250 zł</p>
                 </div>
             </div>
@@ -58,7 +58,7 @@
                     <path d="M0.44 25.1L10.7 8.9H4.22C4.22 10.22 3.824 11.552 3.032 12.896C2.72 13.4 2.336 13.868 1.88 14.3H0.8V8H17.18V8.9L6.92 25.1H13.76C13.76 23.732 14.144 22.4 14.912 21.104C15.248 20.552 15.644 20.084 16.1 19.7H17.18V26H0.44V25.1ZM27.4372 26.54C26.0212 26.54 24.7612 26.18 23.6572 25.46C22.5532 24.716 21.6772 23.636 21.0292 22.22C20.3812 20.78 20.0572 19.04 20.0572 17C20.0572 13.928 20.7652 11.576 22.1812 9.944C23.6212 8.288 25.5532 7.46 27.9772 7.46C29.1292 7.46 30.1372 7.7 31.0012 8.18C31.3612 8.348 31.7332 8.588 32.1172 8.9V1.88L29.9572 1.34V0.799998H34.6372C36.7972 0.799998 37.8772 1.88 37.8772 4.04V24.92L40.0372 25.46V26H36.7972C35.3572 26 34.2412 25.556 33.4492 24.668C33.1132 24.308 32.8492 23.852 32.6572 23.3C32.3452 23.9 31.9492 24.44 31.4692 24.92C30.3892 26 29.0452 26.54 27.4372 26.54ZM28.8772 25.28C29.7652 25.28 30.5692 24.8 31.2892 23.84C31.5532 23.48 31.8292 23 32.1172 22.4V9.98C31.8532 9.716 31.5772 9.476 31.2892 9.26C30.6412 8.78 30.0172 8.54 29.4172 8.54C28.3852 8.54 27.5812 9.14 27.0052 10.34C26.4532 11.54 26.1772 13.76 26.1772 17C26.1772 20.096 26.4292 22.256 26.9332 23.48C27.4612 24.68 28.1092 25.28 28.8772 25.28ZM42.3814 25.46L44.5414 24.92V9.08L42.3814 8.54V8H45.6214C47.0374 8 48.1534 8.456 48.9694 9.368C49.2814 9.728 49.5454 10.172 49.7614 10.7C50.1214 10.172 50.5654 9.692 51.0934 9.26C52.2934 8.3 53.6374 7.82 55.1254 7.82C56.3974 7.82 57.3454 8.12 57.9694 8.72C58.6174 9.296 58.9414 10.136 58.9414 11.24C58.9414 12.056 58.6894 12.716 58.1854 13.22C57.7054 13.7 57.0574 13.94 56.2414 13.94C55.9054 13.94 55.5694 13.916 55.2334 13.868L54.8014 13.76V8.72C53.5774 8.72 52.4614 9.2 51.4534 10.16C50.9734 10.64 50.5894 11.12 50.3014 11.6V24.92L52.4614 25.46V26H42.3814V25.46ZM70.0972 26.54C67.1212 26.54 64.7812 25.7 63.0772 24.02C61.3972 22.316 60.5572 19.976 60.5572 17C60.5572 14.024 61.3972 11.696 63.0772 10.016C64.7812 8.312 67.1212 7.46 70.0972 7.46C73.0732 7.46 75.4012 8.312 77.0812 10.016C78.7852 11.696 79.6372 14.024 79.6372 17C79.6372 19.976 78.7852 22.316 77.0812 24.02C75.4012 25.7 73.0732 26.54 70.0972 26.54ZM70.0972 25.82C71.0572 25.82 71.8612 25.148 72.5092 23.804C73.1812 22.46 73.5172 20.192 73.5172 17C73.5172 13.808 73.1812 11.54 72.5092 10.196C71.8612 8.852 71.0572 8.18 70.0972 8.18C69.1372 8.18 68.3212 8.852 67.6492 10.196C67.0012 11.54 66.6772 13.808 66.6772 17C66.6772 20.192 67.0012 22.46 67.6492 23.804C68.3212 25.148 69.1372 25.82 70.0972 25.82ZM82.1698 9.08L80.3698 8.54V8H84.5098C85.7818 8 86.7898 8.264 87.5338 8.792C88.2778 9.32 88.8898 10.076 89.3698 11.06L93.3298 19.34L95.3818 14.084L92.9698 9.08L91.1698 8.54V8H95.3098C96.5818 8 97.5898 8.264 98.3338 8.792C99.0778 9.32 99.6898 10.076 100.17 11.06L104.13 19.34L107.91 9.62L105.21 8.54V8H111.87V8.54L108.99 9.62L102.33 26.36H101.25L95.9218 15.272L91.5298 26.36H90.4498L82.1698 9.08ZM121.605 26.54C118.533 26.54 116.145 25.7 114.441 24.02C112.737 22.316 111.885 19.976 111.885 17C111.885 15.056 112.257 13.364 113.001 11.924C113.745 10.484 114.777 9.38 116.097 8.612C117.441 7.844 118.977 7.46 120.705 7.46C122.433 7.46 123.945 7.784 125.241 8.432C126.561 9.08 127.569 9.956 128.265 11.06C128.985 12.14 129.345 13.34 129.345 14.66C129.345 15.26 129.285 15.776 129.165 16.208L128.985 16.82C127.953 17.036 126.837 17.216 125.637 17.36C123.117 17.72 120.573 17.9 118.005 17.9C118.005 20.684 118.389 22.676 119.157 23.876C119.925 25.052 120.981 25.64 122.325 25.64C123.261 25.64 124.125 25.424 124.917 24.992C125.733 24.536 126.369 23.948 126.825 23.228C127.305 22.484 127.545 21.728 127.545 20.96H128.445C128.445 21.92 128.157 22.832 127.581 23.696C127.005 24.56 126.201 25.256 125.169 25.784C124.137 26.288 122.949 26.54 121.605 26.54ZM118.005 17C119.541 17 120.789 16.94 121.749 16.82C122.157 16.796 122.589 16.736 123.045 16.64C123.069 16.52 123.129 16.256 123.225 15.848C123.345 15.248 123.405 14.612 123.405 13.94C123.405 11.948 123.141 10.496 122.613 9.584C122.085 8.648 121.449 8.18 120.705 8.18C118.905 8.18 118.005 11.12 118.005 17ZM151.66 26.54C148.684 26.54 146.344 25.7 144.64 24.02C142.96 22.316 142.12 19.976 142.12 17C142.12 14.024 142.96 11.696 144.64 10.016C146.344 8.312 148.684 7.46 151.66 7.46C154.636 7.46 156.964 8.312 158.644 10.016C160.348 11.696 161.2 14.024 161.2 17C161.2 19.976 160.348 22.316 158.644 24.02C156.964 25.7 154.636 26.54 151.66 26.54ZM151.66 25.82C152.62 25.82 153.424 25.148 154.072 23.804C154.744 22.46 155.08 20.192 155.08 17C155.08 13.808 154.744 11.54 154.072 10.196C153.424 8.852 152.62 8.18 151.66 8.18C150.7 8.18 149.884 8.852 149.212 10.196C148.564 11.54 148.24 13.808 148.24 17C148.24 20.192 148.564 22.46 149.212 23.804C149.884 25.148 150.7 25.82 151.66 25.82ZM164.092 25.46L166.252 24.92V9.08L164.092 8.54V8H167.332C168.748 8 169.864 8.456 170.68 9.368C170.992 9.728 171.256 10.172 171.472 10.7C171.808 10.076 172.204 9.536 172.66 9.08C173.74 8 175.084 7.46 176.692 7.46C178.036 7.46 179.236 7.748 180.292 8.324C181.372 8.876 182.212 9.608 182.812 10.52C183.412 11.432 183.712 12.392 183.712 13.4V24.92L185.872 25.46V26H181.192C179.032 26 177.952 24.92 177.952 22.76V13.4C177.952 11.888 177.676 10.736 177.124 9.944C176.596 9.128 175.972 8.72 175.252 8.72C174.34 8.72 173.524 9.2 172.804 10.16C172.492 10.568 172.228 11.048 172.012 11.6V24.92L174.172 25.46V26H164.092V25.46ZM188.034 25.46L190.194 24.92V1.88L188.034 1.34V0.799998H192.714C194.874 0.799998 195.954 1.88 195.954 4.04V24.92L198.114 25.46V26H188.034V25.46ZM200.268 25.46L202.428 24.92V9.08L200.268 8.54V8H204.948C207.108 8 208.188 9.08 208.188 11.24V24.92L210.348 25.46V26H200.268V25.46ZM204.948 5.84C204.228 5.84 203.628 5.6 203.148 5.12C202.668 4.64 202.428 4.04 202.428 3.32C202.428 2.6 202.668 2 203.148 1.52C203.628 1.04 204.228 0.799998 204.948 0.799998C205.668 0.799998 206.268 1.04 206.748 1.52C207.228 2 207.468 2.6 207.468 3.32C207.468 4.04 207.228 4.64 206.748 5.12C206.268 5.6 205.668 5.84 204.948 5.84ZM212.503 25.46L214.663 24.92V9.08L212.503 8.54V8H215.743C217.159 8 218.275 8.456 219.091 9.368C219.403 9.728 219.667 10.172 219.883 10.7C220.219 10.076 220.615 9.536 221.071 9.08C222.151 8 223.495 7.46 225.103 7.46C226.447 7.46 227.647 7.748 228.703 8.324C229.783 8.876 230.623 9.608 231.223 10.52C231.823 11.432 232.123 12.392 232.123 13.4V24.92L234.283 25.46V26H229.603C227.443 26 226.363 24.92 226.363 22.76V13.4C226.363 11.888 226.087 10.736 225.535 9.944C225.007 9.128 224.383 8.72 223.663 8.72C222.751 8.72 221.935 9.2 221.215 10.16C220.903 10.568 220.639 11.048 220.423 11.6V24.92L222.583 25.46V26H212.503V25.46ZM246.164 26.54C243.092 26.54 240.704 25.7 239 24.02C237.296 22.316 236.444 19.976 236.444 17C236.444 15.056 236.816 13.364 237.56 11.924C238.304 10.484 239.336 9.38 240.656 8.612C242 7.844 243.536 7.46 245.264 7.46C246.992 7.46 248.504 7.784 249.8 8.432C251.12 9.08 252.128 9.956 252.824 11.06C253.544 12.14 253.904 13.34 253.904 14.66C253.904 15.26 253.844 15.776 253.724 16.208L253.544 16.82C252.512 17.036 251.396 17.216 250.196 17.36C247.676 17.72 245.132 17.9 242.564 17.9C242.564 20.684 242.948 22.676 243.716 23.876C244.484 25.052 245.54 25.64 246.884 25.64C247.82 25.64 248.684 25.424 249.476 24.992C250.292 24.536 250.928 23.948 251.384 23.228C251.864 22.484 252.104 21.728 252.104 20.96H253.004C253.004 21.92 252.716 22.832 252.14 23.696C251.564 24.56 250.76 25.256 249.728 25.784C248.696 26.288 247.508 26.54 246.164 26.54ZM242.564 17C244.1 17 245.348 16.94 246.308 16.82C246.716 16.796 247.148 16.736 247.604 16.64C247.628 16.52 247.688 16.256 247.784 15.848C247.904 15.248 247.964 14.612 247.964 13.94C247.964 11.948 247.7 10.496 247.172 9.584C246.644 8.648 246.008 8.18 245.264 8.18C243.464 8.18 242.564 11.12 242.564 17Z" fill="white"/>
                 </svg>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-5 hide-mobile">
                 <h2 class="text-white">Newsletter</h2>
             </div>
         </div>
@@ -71,11 +71,11 @@
             <div class="col-md-4">
                 <div class="footer__contact-block">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
+                        <g>
                             <path d="M7.09889 8.08393C6.31483 11.8375 9.27034 16.3055 12.9822 20.0173C16.694 23.7291 21.162 26.6847 24.9156 25.9006C28.0954 25.2364 29.6719 23.5115 30.5435 22.0844C30.797 21.6694 30.6671 21.1368 30.2772 20.846L25.6923 17.426C25.2942 17.1291 24.7385 17.1693 24.3873 17.5205L21.9739 19.9339C21.9739 19.9339 19.7329 19.2054 16.7635 16.236C13.794 13.2666 13.0656 11.0256 13.0656 11.0256L15.479 8.61218C15.8302 8.26099 15.8704 7.70528 15.5735 7.30717L12.1535 2.72225C11.8627 2.3324 11.3301 2.20242 10.915 2.45594C9.48794 3.32758 7.76311 4.90408 7.09889 8.08393Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         <defs>
-                            <filter id="filter0_d" x="0.939453" y="0.733887" width="32.3268" height="32.3268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="0.939453" y="0.733887" width="32.3268" height="32.3268" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -93,14 +93,14 @@
                 </div>
                 <div class="footer__contact-block">
                     <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
+                        <g>
                             <circle cx="17" cy="16" r="15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
-                        <g filter="url(#filter1_d)">
+                        <g>
                             <path d="M17 26V16L24.5 8.50002" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
                         <defs>
-                            <filter id="filter0_d" x="0.25" y="0.25" width="33.5" height="33.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="0.25" y="0.25" width="33.5" height="33.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -109,7 +109,7 @@
                                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                             </filter>
-                            <filter id="filter1_d" x="15.25" y="7.75" width="11" height="21" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="15.25" y="7.75" width="11" height="21" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -128,14 +128,14 @@
                 </div>
                 <div class="footer__contact-block">
                     <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
+                        <g>
                             <path d="M2 25.7778V9C2 8.44772 2.44772 8 3 8H15H27C27.5523 8 28 8.44772 28 9V25.7778C28 26.3301 27.5523 26.7778 27 26.7778H3C2.44772 26.7778 2 26.3301 2 25.7778Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                         </g>
-                        <g filter="url(#filter1_d)">
+                        <g>
                             <path d="M2 8.72217L15 17.3888L28 8.72217" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                         </g>
                         <defs>
-                            <filter id="filter0_d" x="0.25" y="7.25" width="29.5" height="22.2778" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="0.25" y="7.25" width="29.5" height="22.2778" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -144,7 +144,7 @@
                                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                             </filter>
-                            <filter id="filter1_d" x="0.583984" y="8.09814" width="28.8321" height="12.0407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="0.583984" y="8.09814" width="28.8321" height="12.0407" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -163,14 +163,14 @@
                 </div>
                 <div class="footer__contact-block">
                     <svg width="24" height="34" viewBox="0 0 24 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g filter="url(#filter0_d)">
+                        <g>
                             <path d="M22 11C22 19.4024 14.94 27.8047 12.6842 30.275C12.3118 30.6829 11.6882 30.6829 11.3158 30.275C9.05995 27.8047 2 19.4024 2 11C2 7.66667 4.5 1 12 1C19.5 1 22 7.66667 22 11Z" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                         </g>
-                        <g filter="url(#filter1_d)">
+                        <g>
                             <circle cx="11.9993" cy="11.0003" r="3.33333" stroke="white" stroke-width="1.5" stroke-linejoin="round"/>
                         </g>
                         <defs>
-                            <filter id="filter0_d" x="0.25" y="0.25" width="23.5" height="33.0809" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="0.25" y="0.25" width="23.5" height="33.0809" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -179,7 +179,7 @@
                                 <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
                                 <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
                             </filter>
-                            <filter id="filter1_d" x="6.91602" y="6.91699" width="10.1667" height="10.1667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <filter x="6.91602" y="6.91699" width="10.1667" height="10.1667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
                                 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
                                 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
                                 <feOffset dy="1"/>
@@ -199,11 +199,12 @@
             </div>
             <div class="col-md-5">
                 <p class="text-white">Bądź na bieżąco z promocjami i nowościami, oraz kolejnymi przepisami, które publikujemy systematycznie!</p>
+                <?php echo do_shortcode('[noptin-form id=101]'); ?>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <p class="text-white" style="margin-top: 30px; font-size: 14px; text-align: center">Copyright © Zdrowe Online</p>
+                <p class="text-white" style="margin-top: 30px; font-size: 14px; text-align: center">Copyright © Zdrowa Przekąska</p>
             </div>
         </div>
     </div>
@@ -218,7 +219,7 @@
     gtag('config', 'XXX');
 
     let navOpened = false;
-    let initHeight = 260;
+    let initHeight = 100;
 
     function slideToggle() {
         let navMobile = document.getElementById('navbar__nav-mobile');
@@ -226,10 +227,12 @@
         if (navOpened) {
             navOpened = false;
             navMobile.style.height = '0';
+            navMobile.style.paddingTop = '0';
             document.getElementById('navbar__toggle').classList.remove('navbar__toggle--open');
         } else {
             navOpened = true;
-            navMobile.style.height = initHeight + 'px';
+            navMobile.style.height = initHeight + 'vh';
+            navMobile.style.paddingTop = '50px';
             document.getElementById('navbar__toggle').classList.add('navbar__toggle--open');
         }
     }

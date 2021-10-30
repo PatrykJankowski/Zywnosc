@@ -7,18 +7,21 @@
     position: absolute;
     top: 0;
     left: 50px;
+    max-width: calc(100% - 50px);
   }
 
   &__bg2 {
     position: absolute;
     bottom: 0;
     right: 50px;
+    opacity: .9;
   }
 
   &__bg3 {
     position: absolute;
     bottom: 100px;
     right: 500px;
+    opacity: .9;
   }
 
   &__contact-block {

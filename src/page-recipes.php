@@ -17,7 +17,7 @@ $posts = new WP_Query($args);
 
 <section class="">
     <div class="top">
-        <img src="/sklep/wp-content/themes/zywnosc/img/przepisy.webp" style="width:100%">
+        <img src="/wp-content/themes/zywnosc/img/przepisy.webp" style="width:100%">
         <div class="container container-slider">
             <div class="text">
                 <span>Przepisy</span>
@@ -61,15 +61,14 @@ $posts = new WP_Query($args);
                         <?php endif; ?>
 
                             <div class="col-xl-3">
-                                <article class="blog__post">
-                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
-                                    <div class="blog__content">
-                                        <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d/m/Y', $posts->post->post_date)); ?></div>
-                                        <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                                        <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 30, '...'); ?>
-                                        <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
-                                    </div>
-                                </article>
+                                <a href="<?php echo the_permalink(); ?>" class="recipes__wrapper">
+                                    <article class="recipes__post">
+                                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                                        <div class="recipes__content">
+                                            <h4 class="recipes__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h4>
+                                        </div>
+                                    </article>
+                                </a>
                             </div>
 
                             <?php if ($counter % 4 == 0) : ?>

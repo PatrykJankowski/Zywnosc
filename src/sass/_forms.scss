@@ -112,6 +112,11 @@ select {
   border-color: red;
 }
 
+.noptin-optin-form-wrapper.noptin-slide-from-bottom_right {
+  form {
+    margin-top: 0;
+  }
+}
 
 body .select2-container--default .select2-selection--single {
   height: 100%;

@@ -13,7 +13,7 @@
   //margin-top: 60px;
 
   &__bar {
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -25,11 +25,19 @@
     font-family: Spectral, sans-serif;
     font-weight: 700;
     @include font-size(22);
+
+    @media only screen and (min-width: $tablet) {
+      display: flex;
+    }
   }
 
   &__logo-wrapper {
     display: inline-flex;
     align-items: center;
+  }
+
+  &__logo {
+    margin: 40px 0;
   }
 
   &__nav-mobile {
@@ -40,8 +48,9 @@
     height: 0;
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;
-    top: $navigation-height-mobile;
+    top: 0;
     left: 0; //IE fix
+    z-index: 10;
 
     ul {
       margin: 0;
@@ -79,14 +88,14 @@
       list-style: none;
 
       li {
-        padding-right: 9px;
+        padding-right: 13px;
 
         @media only screen and (min-width: 1200px) {
-          padding-right: 25px;
+          padding-right: 29px;
         }
 
         @media only screen and (min-width: 1400px) {
-          padding-right: 48px;
+          padding-right: 52px;
         }
 
         &:last-of-type {
@@ -96,7 +105,6 @@
         a {
           color: $text-color;
           transition: 1s ease;
-          border: 2px solid transparent;
           font-family: Nunito, sans-serif;
           font-weight: 700;
           @include font-size(17);
@@ -129,22 +137,27 @@
     align-items: flex-end;
     flex-grow: 1;
     flex-direction: column;
+    z-index: 11;
 
     @media only screen and (min-width: $desktop) {
       display: none;
     }
 
-    &--open i {
-      background: transparent;
+    &--open {
+      position: fixed;
 
-      &:before {
-        top: 0;
-        transform: rotate(135deg);
-      }
+      i {
+        background: transparent;
 
-      &:after {
-        top: 0;
-        transform: rotate(225deg);
+        &:before {
+          top: 0;
+          transform: rotate(135deg);
+        }
+
+        &:after {
+          top: 0;
+          transform: rotate(225deg);
+        }
       }
     }
   }

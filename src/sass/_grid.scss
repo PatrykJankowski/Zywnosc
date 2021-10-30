@@ -23,6 +23,13 @@
   height: 100%;
   left: 50%;
   transform: translateX(-50%);
+
+  padding: 0 50px;
+
+  @media (min-width: 640px) {
+    padding: 0;
+  }
+
 }
 
 @media (min-width: 576px) {

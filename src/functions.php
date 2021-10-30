@@ -175,25 +175,22 @@ function filter_function(){
         }
 
             echo '<div class="col-xl-3">
-                <article class="blog__post">
+                  <a href="';
+            echo the_permalink();
+            echo '" class="recipes__wrapper">
+                <article class="recipes__post">
                     <img src="';
             echo wp_get_attachment_url(get_post_thumbnail_id($query->ID), 'thumbnail');
             echo '" class="blog__image" alt="';
             echo apply_filters('the_title', $query->post->post_title);
             echo '">
-                    <div class="blog__content">
-                        <div class="blog__date">';
-            echo apply_filters('the_date', mysql2date('d/m/Y', $query->post->post_date));
-            echo '</div>
-                        <h3 class="blog__title">';
+                  <div class="recipes__content">
+                     <h4 class="recipes__title">';
             echo apply_filters('the_title', $query->post->post_title);
             echo '</h3>';
-            echo wp_trim_words(wp_strip_all_tags(apply_filters('the_content', $query->post->post_content)), 30, '...');
-            echo '<a href="';
-            echo the_permalink();
-            echo '" class="blog__link">Zobacz przepis...</a>
-                    </div>
+            echo '</div>
                 </article>
+                </a>
             </div>';
 
             if ($counter % 4 == 0) {

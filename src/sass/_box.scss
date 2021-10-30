@@ -3,11 +3,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 180px;
   margin: $m 0;
   background: url(img/box1.webp) center;
   background-size: cover;
   color: $white;
+
+  @media only screen and (min-width: $tablet) {
+    height: 250px;
+  }
 
   &--box-2 {
     background-image: url(img/box2.webp);
@@ -16,10 +20,16 @@
   &__header {
     font-family: Spectral, sans-serif;
     text-align: center;
-    @include font-size(40);
-    line-height: 60px;
+    @include font-size(32);
+    line-height: 1.4;
     font-weight: 700;
-    margin: $s 0;
+    margin: 10px 0;
+
+    @media only screen and (min-width: $tablet) {
+      @include font-size(40);
+      line-height: 60px;
+      margin: $s 0;
+    }
   }
 
   &__link {

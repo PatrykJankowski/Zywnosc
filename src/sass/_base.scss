@@ -16,6 +16,7 @@ h1 {
   font-size: $h1-size;
   line-height: 1;
   margin: $s 0;
+  font-family: Spectral, sans-serif;
 }
 
 h2 {
@@ -27,6 +28,7 @@ h2 {
 
 h3 {
   font-size: $h3-size;
+  font-family: Spectral, sans-serif;
 }
 
 h4 {
@@ -56,9 +58,31 @@ img {
 }
 
 
+.hp-boxes-bg1 {
+  position: absolute;
+  top: $m;
+  left: 0;
+  z-index: -1;
+}
 
+.hp-boxes-bg2 {
+  position: absolute;
+  top: $m;
+  right: 0;
+  z-index: -1;
+}
 
+.hp-recipes-bg1 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
 
+.hp-recipes-bg2 {
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
 
 body .woocommerce a.remove {
   font-size: 2.5rem;
@@ -188,6 +212,11 @@ body .woocommerce a.remove {
 .categories {
   list-style: none;
   background: $gray1;
+  margin-bottom: 60px;
+
+  @media (min-width: 992px) {
+    margin-bottom: 0;
+  }
 
   a {
     display: inline-flex;

@@ -10,6 +10,11 @@
 
 .article {
   margin-top: 10px;
+  margin-bottom: 40px;
+
+  @media only screen and (min-width: 992px) {
+    margin-bottom: 0;
+  }
 
   &__date {
     margin: 0 0 10px 0;

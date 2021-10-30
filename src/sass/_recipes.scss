@@ -1,4 +1,32 @@
 .recipes {
+
+  &__wrapper {
+    display: flex;
+  }
+
+  &__post {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    margin-bottom: $m;
+
+    @include for-size(desktop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    height: 190px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+
+  &__content {
+    @include font-size(18);
+    color: #4C606A;
+  }
+
   &__top {
     position: relative;
     height: 300px;
