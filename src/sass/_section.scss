@@ -1,3 +1,9 @@
 .section {
   padding: $xl 0;
 }
+
+.woocommerce-section {
+  .page-title {
+    display: none;
+  }
+}

@@ -3,6 +3,15 @@
   display: flex;
   height: 300px;
 
+  &--woocommerce {
+    height: 200px;
+    background-color: #F7F7FA;
+
+    .text h1 {
+      color: $text-color;
+    }
+  }
+
   img {
     height: 100%;
     object-fit: cover;
@@ -13,11 +22,38 @@
     top: 50%;
     transform: translateY(-50%);
     width: 100%;
-    max-width: 800px;
     color: $white;
     @include font-size(46);
     line-height: 50px;
     font-weight: 600;
     font-family: Spectral, sans-serif;
+    max-width: calc(100% - 100px);
+  }
+
+  &__bg1 {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    max-width: 100%;
+  }
+
+  &__bg2 {
+    position: absolute;
+    right: 50px;
+    top: 30px;
+    max-width: 100%;
+  }
+
+  &__bg3 {
+    position: absolute;
+    right: 280px;
+    top: 90px;
+    max-width: 100%;
+  }
+}
+
+.single-product {
+  .top {
+    display: none;
   }
 }

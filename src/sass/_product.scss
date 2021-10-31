@@ -17,6 +17,10 @@
     color: #43A628;
 }
 
+.single-product .hide {
+    display: none;
+}
+
 .product del .woocommerce-Price-amount.amount {
     @include font-size(16);
 }
