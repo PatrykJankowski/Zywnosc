@@ -46,11 +46,11 @@
   }
 
   &__title {
-    margin: $s 0;
-    @include font-size(26);
-    line-height: 32px;
+    margin: 10px 0;
+    @include font-size(18);
+    line-height: 1.2;
     color: $text-color;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   &__date {
@@ -65,7 +65,7 @@
   }
 
   &__content {
-    @include font-size(18);
+    @include font-size(16);
     min-height: 270px;
     flex: 1;
     color: #4C606A;

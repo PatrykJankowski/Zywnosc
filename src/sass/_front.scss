@@ -16,21 +16,38 @@
     margin-bottom: 0;
   }
 
+  &__wrapper-link {
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      .article__more {
+        color: #43A628;
+      }
+      .article__header, .article__content, .article__date {
+        color: #000;
+      }
+    }
+  }
+
   &__date {
     margin: 0 0 10px 0;
   }
 
   &__header {
     margin: 0;
+    @include font-size(18);
   }
 
   &__content {
-    margin: 20px 0 0;
+    margin: 10px 0 0;
   }
 
   &__more {
     display: inline-block;
-    margin-top: $s;
-    color: $text-color;
+    margin-top: 10px;
+    color: #E5E5E5;
+    font-family: Spectral, sans-serif;
+    @include font-size(18);
   }
 }

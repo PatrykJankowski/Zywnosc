@@ -88,7 +88,7 @@
 
 </section>
 
-<section class="pt-100 pb-60 bg-gray1">
+<section class="pt-60 pb-20 bg-gray1">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -97,13 +97,13 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php echo do_shortcode('[sale_products per_page="5" columns="5" order="asc"]'); ?>
+                <?php echo do_shortcode('[sale_products per_page="6" columns="6" order="asc"]'); ?>
             </div>
         </div>
     </div>
 </section>
 
-<section class="pt-100 pb-60">
+<section class="pt-60 pb-20">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -112,13 +112,13 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php echo do_shortcode('[recent_products per_page="5" columns="5" order="dsc"]'); ?>
+                <?php echo do_shortcode('[recent_products per_page="6" columns="6" order="dsc"]'); ?>
             </div>
         </div>
     </div>
 </section>
 
-<section class="pt-100 pb-100 bg-gray1 relative">
+<section class="pt-60 pb-60 bg-gray3 relative">
     <svg class="hp-recipes-bg1" width="232" height="432" viewBox="0 0 232 432" fill="none" xmlns="http://www.w3.org/2000/svg">
         <g style="mix-blend-mode:multiply">
             <g style="mix-blend-mode:multiply">
@@ -203,28 +203,30 @@
     $posts = new WP_Query($args);
 ?>
 
-<section class="pt-100 pb-100">
+<section class="pt-80 pb-80">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4 class="text-center mb-l">Przepisy</h4>
+                <h4 class="text-center mb-l h-40">Przepisy</h4>
             </div>
         </div>
         <div class="row">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
 
                 <div class="col-6 col-lg-3">
+                    <a class="recipes__link_wrapper" href="<?php echo the_permalink(); ?>">
+                        <span class="more more--cover">Czytaj</span>
                     <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
                     <div class="article">
                         <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                        <a class="article__more" href="<?php echo the_permalink(); ?>">Zobacz przepis...</a>
                     </div>
+                    </a>
                 </div>
             <?php endwhile; wp_reset_query(); ?>
         </div>
         <div class="row">
             <div class="col">
-                <a class="text-center mt-xl more" href="/przepisy">Zobacz wszsytkie</a>
+                <a class="text-center more" href="/przepisy">Zobacz wszsytkie</a>
             </div>
         </div>
     </div>
@@ -239,30 +241,32 @@
     $posts = new WP_Query($args);
 ?>
 
-<section class="pt-100 pb-100 bg-gray1">
+<section class="pt-80 pb-80 bg-gray2">
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4 class="text-center mb-l">Blog</h4>
+                <h4 class="text-center mb-l h-40">Blog</h4>
             </div>
         </div>
         <div class="row">
             <?php while ($posts->have_posts()) : $posts->the_post(); ?>
 
                 <div class="col-sm-6 col-lg-3">
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
-                    <div class="article">
-                        <div class="article__date"><?php echo apply_filters('the_date', mysql2date('d/m/Y', $posts->post->post_date)); ?></div>
-                        <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                        <div class="article__content"><?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?></div>
-                        <a class="article__more" href="<?php echo the_permalink(); ?>">Czytaj więcej...</a>
-                    </div>
+                    <a class="article__wrapper-link" href="<?php echo the_permalink(); ?>">
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                        <div class="article">
+                            <div class="article__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
+                            <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
+                            <div class="article__content"><?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?></div>
+                            <span class="article__more">Czytaj więcej...</span>
+                        </div>
+                    </a>
                 </div>
             <?php endwhile; wp_reset_query(); ?>
         </div>
         <div class="row">
             <div class="col">
-                <a class="text-center mt-xl more" href="/blog">Zobacz wszsytkie</a>
+                <a class="text-center more" href="/blog">Zobacz wszsytkie</a>
             </div>
         </div>
     </div>

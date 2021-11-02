@@ -4,6 +4,22 @@
     display: flex;
   }
 
+  &__link_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &:hover {
+      img {
+        opacity: .5;
+      }
+
+      .more {
+        display: flex;
+      }
+    }
+  }
+
   &__post {
     display: flex;
     flex-direction: column;
@@ -17,7 +33,7 @@
   }
 
   &__image {
-    height: 190px;
+    height: 208px;
     object-fit: cover;
     margin-bottom: 10px;
   }
@@ -25,6 +41,10 @@
   &__content {
     @include font-size(18);
     color: #4C606A;
+  }
+
+  &__title {
+    @include font-size(18);
   }
 
   &__top {
@@ -74,6 +94,11 @@
     border: 1px solid #DBEDD5;
   }
 
+  &__right {
+    display: flex;
+    margin-left: auto;
+  }
+
   &__icon {
     display: flex;
     flex-direction: column;
@@ -84,6 +109,18 @@
     svg {
       margin-bottom: 10px;
     }
+
+    &--right {
+      margin-right: 0;
+      margin-left: $s;
+      cursor: pointer;
+
+      svg {
+        margin-bottom: 0;
+      }
+    }
+
+
   }
 
   &__filters {

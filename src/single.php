@@ -67,11 +67,35 @@
                     </svg>
                     <span>wege</span>
                 </div>
+
+                <div class="recipes__right">
+                    <div class="recipes__icon recipes__icon--right btn-print" onclick="javascript:window.print()">
+                        <svg width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30.592" cy="30" r="30" fill="#444"/><g filter="url(#a)"><path d="M39.26 36.419h1.889a1 1 0 0 0 1-1V24.58a1 1 0 0 0-1-1h-21.11a1 1 0 0 0-1 1V35.42a1 1 0 0 0 1 1h1.889" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><g filter="url(#b)"><path d="M22.89 29.716a1 1 0 0 1 1-1h13.407a1 1 0 0 1 1 1v10.839a1 1 0 0 1-1 1H23.89a1 1 0 0 1-1-1V29.716Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><g filter="url(#c)"><path d="M22.89 19.445a1 1 0 0 1 1-1h13.407a1 1 0 0 1 1 1v4.136H22.89v-4.136Z" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><g filter="url(#d)"><path d="M26.1 31.925h8.987" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><g filter="url(#e)"><path d="M26.1 38.345h8.987" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><g filter="url(#f)"><path d="M26.1 35.136h8.987" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g><defs><filter id="a" x="17.289" y="22.83" width="26.609" height="16.339" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter><filter id="b" x="21.141" y="27.966" width="18.906" height="16.339" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter><filter id="c" x="21.141" y="17.695" width="18.906" height="8.636" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter><filter id="d" x="24.35" y="31.175" width="12.486" height="3.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter><filter id="e" x="24.35" y="37.595" width="12.486" height="3.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter><filter id="f" x="24.35" y="34.386" width="12.486" height="3.5" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation=".5"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_986:542"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_986:542" result="shape"/></filter></defs></svg>
+                    </div>
+
+                    <a href="#" class="recipes__icon recipes__icon--right btn-print" id="donwload-link" onClick="myFunction()">
+                        <svg width="61" height="60" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="30.592" cy="30" r="30" fill="#444"/><path d="M21.23 31.444a.75.75 0 0 0-1.5 0h1.5Zm20.221 0a.75.75 0 0 0-1.5 0h1.5Zm-21.72 0v9.11h1.5v-9.11h-1.5Zm21.72 9.11v-9.11h-1.5v9.11h1.5Zm-1.75.25h-18.22v1.5H39.7v-1.5Zm.25-.25a.25.25 0 0 1-.25.25v1.5a1.75 1.75 0 0 0 1.75-1.75h-1.5Zm-20.22 0c0 .967.783 1.75 1.75 1.75v-1.5a.25.25 0 0 1-.25-.25h-1.5Z" fill="#fff"/><path d="M30.59 18.445v17.332m0 0L36.367 30m-5.777 5.777L24.812 30" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
 </section>
 <?php endif; ?>
+
+<script>
+    function myFunction() {
+        var content = document.documentElement.innerHTML;
+        download(content, "index", "html")
+    }
+    function download(content, fileName, fileType) {
+        var link = document.getElementById("donwload-link");
+        var file = new Blob([content], {type: "html"});
+        var donwloadFile = fileName + "." + fileType;
+        link.href = URL.createObjectURL(file);
+        link.download = donwloadFile
+    }
+</script>
 
 <section class="section">
     <div class="container">

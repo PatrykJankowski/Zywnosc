@@ -166,15 +166,13 @@ function filter_function(){
 
     $query = new WP_Query( $args );
     $counter = 1;
+    echo '<div class="row">';
 
     while ($query->have_posts()) {
         $query->the_post();
 
-        if ($counter == 1 or ($counter - 1) % 4 == 0) {
-            echo '<div class="row">';
-        }
 
-            echo '<div class="col-xl-3">
+            echo '<div class="col-6 col-md-4 col-xxl-3">
                   <a href="';
             echo the_permalink();
             echo '" class="recipes__wrapper">
@@ -193,14 +191,12 @@ function filter_function(){
                 </a>
             </div>';
 
-            if ($counter % 4 == 0) {
-                echo '</div>';
-            }
             $counter++;
 
 
     wp_reset_postdata();
     }
+    echo '</div>';
 
     die();
 }
@@ -218,7 +214,7 @@ function woo_related_products_limit() {
 }
 add_filter('woocommerce_output_related_products_args', 'jk_related_products_args', 20);
 function jk_related_products_args( $args ) {
-    $args['posts_per_page'] = 5;
-    $args['columns'] = 5;
+    $args['posts_per_page'] = 6;
+    $args['columns'] = 6;
     return $args;
 }

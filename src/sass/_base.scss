@@ -491,7 +491,14 @@ body.woocommerce-account .addresses .title .edit {
 
 
 body .woocommerce ul.products li.product a img {
-  height: 260px;
+  height: 255px;
   object-fit: cover;
 }
 
+
+
+
+@media print {
+  .header, footer, .recipes__top, .info, .simplefavorite-button, .attachment-post-thumbnail {display:none}
+  .btn-print {display:none;}
+}

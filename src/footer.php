@@ -1,4 +1,4 @@
-    <section class="pt-60 pb-60" style="background: #FBFBFC">
+    <section class="info pt-60 pb-60">
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-lg-2 d-flex-centered">
@@ -156,9 +156,8 @@
                         </defs>
                     </svg>
                     <div class="footer__contact-info">
-                        <span class="footer__contact-title">Infolinia czynna:</span>
-                        <span class="footer__contact-data">Poniedziałek - Piątek: 9:00 - 17:30</span>
-                        <span class="footer__contact-data">Sobota: 11:00 - 17:00</span>
+                        <span class="footer__contact-title">E-mail:</span>
+                        <span class="footer__contact-data">zdrowie@email.com</span>
                     </div>
                 </div>
                 <div class="footer__contact-block">
@@ -191,9 +190,8 @@
                         </defs>
                     </svg>
                     <div class="footer__contact-info">
-                        <span class="footer__contact-title">Infolinia czynna:</span>
-                        <span class="footer__contact-data">Poniedziałek - Piątek: 9:00 - 17:30</span>
-                        <span class="footer__contact-data">Sobota: 11:00 - 17:00</span>
+                        <span class="footer__contact-title">Adres:</span>
+                        <span class="footer__contact-data">ul. Chopin 8A, 36-200 Brzozów</span>
                     </div>
                 </div>
             </div>
@@ -204,7 +202,7 @@
         </div>
         <div class="row">
             <div class="col">
-                <p class="text-white" style="margin-top: 30px; font-size: 14px; text-align: center">Copyright © Zdrowa Przekąska</p>
+                <p class="text-white" style="margin-top: 30px; font-size: 14px; text-align: center; color: #DBEDD5">Copyright © Zdrowa Przekąska</p>
             </div>
         </div>
     </div>
