@@ -54,14 +54,13 @@
   }
 
   &__date {
-    opacity: .5;
-    font-size: 16px;
+    @include font-size(14);
   }
 
   &__image {
-    height: 190px;
+    height: 230px;
     object-fit: cover;
-    margin-bottom: $s;
+    margin-bottom: 10px;
   }
 
   &__content {

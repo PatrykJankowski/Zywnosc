@@ -152,8 +152,9 @@ body .woocommerce a.remove {
 
 }
 
-
-
+.woocommerce div.product span.price ins {
+  text-decoration: none;
+}
 
 
 
@@ -164,28 +165,44 @@ body .woocommerce a.remove {
   @include font-size(16);
   font-weight: 400;
   color: #444;
+  border-radius: 0
+}
+
+.single-product.woocommerce div.product form.cart .button {
+  min-width: 208px;
+
+  @media (min-width: 400px) {
+    margin-left: $s;
+  }
 }
 
 
 
 
 
-.woocommerce .cart {
+  .woocommerce .cart {
   .quantity .qty {
     width: 96px;
   }
 
   .tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart.no-txt {
     height: 48px;
-    margin: 0;
+    width: 48px;
+    margin: 0 0 0 10px;
+
+    &:before {
+      position: static;
+      margin: 0;
+      font-size: 48px;
+    }
   }
 }
 
 
 
 
-.related.products {
-  h2 {
+.related.products, .related {
+  > h2 {
     margin: $xl 0 $l;
     font-family: Spectral, sans-serif;
     font-weight: 700;
@@ -194,6 +211,10 @@ body .woocommerce a.remove {
     text-align: center;
     color: #444;
   }
+}
+
+.related > h2 {
+  margin-top: 0;
 }
 
 
@@ -213,6 +234,7 @@ body .woocommerce a.remove {
   list-style: none;
   background: $gray1;
   margin-bottom: 60px;
+  border: 1px solid #EDF6EA;
 
   @media (min-width: 992px) {
     margin-bottom: 0;
@@ -274,9 +296,10 @@ body .woocommerce a.remove {
 
 
 body.woocommerce-cart .wc-proceed-to-checkout a.checkout-button {
-  background: none;
+  background: #edf6ea;
   color: $text-color;
-  border: 1px solid $text-color;
+  font-weight: 400;
+  border: 0;
 
   &:hover {
     background: #83B345;
@@ -439,7 +462,6 @@ body.woocommerce div.product .woocommerce-tabs {
 
 .simplefavorite-button, .simplefavorites-clear {
   display: inline-block;
-  margin-top: $s;
   padding: 6px;
   cursor: pointer;
   border-style: solid;
@@ -491,7 +513,7 @@ body.woocommerce-account .addresses .title .edit {
 
 
 body .woocommerce ul.products li.product a img {
-  height: 255px;
+  height: 254px;
   object-fit: cover;
 }
 
@@ -499,6 +521,40 @@ body .woocommerce ul.products li.product a img {
 
 
 @media print {
-  .header, footer, .recipes__top, .info, .simplefavorite-button, .attachment-post-thumbnail {display:none}
+  #header, footer, .recipes__top, .info, .simplefavorite-button, .attachment-post-thumbnail, .related.woocommerce, .recipes__bar, .recipes__icons-bar {display:none !important}
   .btn-print {display:none;}
+}
+
+
+
+//koszyk
+body .woocommerce .woocommerce-cart-form table.shop_table td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: none;
+}
+
+body .woocommerce .woocommerce-cart-form table.shop_table th {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+
+
+//account
+.woocommerce-MyAccount-navigation-link--downloads {
+  display: none;
+}
+
+
+
+
+.wp-block-image {
+  margin: 0;
+}
+
+
+.wp-block-group ul {
+  padding-left: 20px;
 }

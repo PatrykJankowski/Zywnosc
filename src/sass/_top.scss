@@ -1,16 +1,25 @@
 .top {
   position: relative;
   display: flex;
-  height: 300px;
+  height: 250px;
 
   &--woocommerce {
-    height: 250px;
+    //height: 250px;
     background-color: #F7F7FA;
     background-image: url("/wp-content/themes/zywnosc/img/slide1.webp");
     background-size: cover;
 
     .text h1 {
       color: $white;
+    }
+  }
+
+  &--product {
+    height: 250px;
+    background-color: #F7F7FA;
+
+    .text h1 {
+      color: $text-color;
     }
   }
 
@@ -69,5 +78,13 @@
 .single-product {
   .top {
     display: none;
+  }
+}
+
+body.single-product {
+  .product-top {
+    .top {
+      display: flex;
+    }
   }
 }

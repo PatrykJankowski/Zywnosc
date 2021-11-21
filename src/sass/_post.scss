@@ -1,0 +1,29 @@
+.post {
+  .simplefavorite-button {
+    display: none;
+  }
+
+  &__related-products {
+    padding: 40px;
+    border: 1px solid #DBEDD5;
+  }
+
+  &__related-product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    &--first {
+      margin-bottom: $m !important;
+    }
+
+    .price {
+      margin: 10px 0;
+    }
+  }
+}
+
+.woocommerce img.post__image {
+  height: 254px;
+  object-fit: cover;
+}

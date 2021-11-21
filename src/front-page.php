@@ -73,9 +73,9 @@
             </div>
             <div class="col-lg-6">
                 <div class="box box--box-2">
-                    <p>Sklep</p>
+                    <p>Blog</p>
                     <h3 class="box__header">Naturalna pielęgnacja</h3>
-                    <a class="box__link" href="kategoria-produktu/kosmetyki-naturalne/">Idź do sklepu</a>
+                    <a class="box__link" href="blog">Zobacz artykuły</a>
                 </div>
             </div>
         </div>
@@ -139,12 +139,12 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <h4 class="text-center mb-m">Miło Cie widzieć!</h4>
+                <h4 class="text-center mb-m">Miło Cię widzieć!</h4>
             </div>
         </div>
         <div class="row">
             <div class="col mb-l">
-                <p class="text-featured text-center">Jestesmy sklepem i blogiem pelnym zdrowych, prostych przepisow, z ktorych mozesz korzystac kazdego dnia.<br>Zapoznaj się z naszą misją i ofertą! Jestesmy sklepem i blogiem pelnym zdrowych, prostych przepisow, z ktorych mozesz korzystac kazdego dnia. Zapoznaj się z naszą misją i ofertą!</p>
+                <p class="text-featured text-center">Jesteśmy sklepem i blogiem pełnym zdrowych, prostych przepisow, z których możesz korzystać każdego dnia.<br>Zapoznaj się z naszą misją i ofertą! Jestesmy sklepem i blogiem pelnym zdrowych, prostych przepisow, z ktorych mozesz korzystac kazdego dnia. Zapoznaj się z naszą misją i ofertą!</p>
             </div>
         </div>
         <div class="row">
@@ -216,7 +216,7 @@
                 <div class="col-6 col-lg-3">
                     <a class="recipes__link_wrapper" href="<?php echo the_permalink(); ?>">
                         <span class="more more--cover">Czytaj</span>
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="article__img" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
                     <div class="article">
                         <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
                     </div>
@@ -253,7 +253,7 @@
 
                 <div class="col-sm-6 col-lg-3">
                     <a class="article__wrapper-link" href="<?php echo the_permalink(); ?>">
-                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="article__img" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
                         <div class="article">
                             <div class="article__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                             <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>

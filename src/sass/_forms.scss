@@ -190,8 +190,26 @@ body .woocommerce.tinv-wishlist {
 
 .wpcf7-submit {
   cursor: pointer;
+  background-color: #edf6ea;
+  min-width: 200px;
 }
 
 body .wpcf7 form .wpcf7-response-output {
   margin: 0;
+}
+
+
+body .noptin-optin-form.noptin-form-single-line .noptin-form-fields .noptin-form-submit {
+  margin-top: 0;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  margin-left: 20px;
+}
+
+body .noptin-form-footer .noptin-optin-field-wrapper:not(.noptin-optin-field-wrapper-hidden) .noptin-form-field {
+  background-color: #c1d9a2;
+  border: 1px solid #fff;
+  border-radius: 2px;
+  color: #fff;
+  @include font-size(18);
 }

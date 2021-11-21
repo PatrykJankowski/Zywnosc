@@ -128,6 +128,10 @@
 
 .text-white {
   color: $white;
+
+  &:before {
+    border-color: #43A628;
+  }
 }
 
 .d-flex-centered {
@@ -154,6 +158,15 @@
     bottom: -2px;
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+
+  &--green {
+    color: #43A628;
+    margin-top: 0;
+
+    &:before {
+      border-color: #43A628;;
+    }
   }
 
   &--cover {
@@ -186,9 +199,13 @@
 
 .info {
   background-color: #FBFBFC;
+
+  p {
+    margin-bottom: 0;
+  }
 }
 
-body.archive.woocommerce {
+body.archive.woocommerce, body.page-template-page-recipes, body.blog {
   .extra-text {
     display: block;
   }

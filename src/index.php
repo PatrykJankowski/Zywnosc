@@ -31,28 +31,22 @@ $posts = new WP_Query($args);
     </div>
 </section>
 
-<section class="section">
+<section class="section pb-60">
     <div class="container">
-        <div class="row mb-l">
-
-        <?php $counter = 0 ?>
+        <div class="row">
 
         <?php while ($posts->have_posts()) : $posts->the_post(); ?>
-
-                <div class="col-md-4 col-xl-3">
-                    <article class="blog__post">
-                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
-                        <div class="blog__content">
-                            <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d/m/Y', $posts->post->post_date)); ?></div>
-                            <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                            <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?>
-                            <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
-                        </div>
-                    </article>
-                </div>
-
-            <?php $counter++; ?>
-
+            <div class="col-md-4 col-xl-3">
+                <article class="blog__post">
+                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                    <div class="blog__content">
+                        <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
+                        <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
+                        <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?>
+                        <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
+                    </div>
+                </article>
+            </div>
         <?php endwhile; ?>
 
         <?php
@@ -70,6 +64,15 @@ $posts = new WP_Query($args);
         </div>
     </div>
 
+</section>
+
+
+<section class="section extra-text pb-20 pt-20">
+    <div class="container">
+        <div class="row">
+            <p>Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia. Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia. Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia.</p>
+        </div>
+    </div>
 </section>
 
 <?php get_footer(); ?>

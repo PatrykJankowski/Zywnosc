@@ -1,7 +1,7 @@
 .recipes {
-
   &__wrapper {
     display: flex;
+    margin-bottom: 40px;
   }
 
   &__link_wrapper {
@@ -127,6 +127,7 @@
     background: #FBFBFC;
     border: 1px solid #DBEDD5;
     padding: $s;
+    margin-bottom: 40px;
 
     label {
       display: flex;

@@ -70,7 +70,7 @@
                                 </svg>
                             </a>
 
-                            <a href="/wishlist/" class="header__button">
+                            <a href="/ulubione-produkty/" class="header__button">
                                 <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M27.1991 8.74095C27.1991 14.2445 19.3017 21.9418 14.8393 25.537C14.4934 25.8158 14.0098 25.8245 13.655 25.5571C9.18992 22.192 1.31055 14.788 1.31055 8.74095C1.31055 -1.32676 14.2548 -1.32675 14.2548 7.30273C14.2548 -1.32676 27.1991 -1.32679 27.1991 8.74095Z" stroke="#444444" stroke-linecap="round" stroke-linejoin="round"/>
                                 </svg>
@@ -100,3 +100,5 @@
     </header>
 
     <main>
+
+

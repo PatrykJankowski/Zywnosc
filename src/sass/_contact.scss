@@ -1,9 +1,37 @@
 .contact {
+  &__bg1 {
+    position: absolute;
+    top: 118px;
+    left: 0;
+    z-index: -1;
+  }
+
+  &__bg2 {
+    position: absolute;
+    left: 78px;
+    top: 280px;
+    z-index: -1;
+  }
+
+  &__bg3 {
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    z-index: -1;
+  }
+
+  &__bg4 {
+    position: absolute;
+    right: 364px;
+    bottom: 118px;
+    z-index: -1;
+  }
 
   &__wrapper {
     background: #F2F9F0;
     padding: 40px $s;
     text-align: center;
+    margin-bottom: 40px;
   }
 
   &__header {
