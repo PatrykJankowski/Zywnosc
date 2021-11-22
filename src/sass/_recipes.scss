@@ -33,7 +33,7 @@
   }
 
   &__image {
-    height: 208px;
+    height: 250px;
     object-fit: cover;
     margin-bottom: 10px;
   }
@@ -75,12 +75,33 @@
   }
 
   &__bar {
+    display: flex;
+    flex-direction: column;
     padding: $m 0;
+
+    @include for-size(desktop) {
+      flex-direction: row;
+    }
   }
 
   &__date {
     display: flex;
     align-items: center;
+
+    svg {
+      margin-right: $s;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    align-items: center;
+    margin-top: $s;
+
+    @include for-size(desktop) {
+      margin-left: $m;
+      margin-top: 0;
+    }
 
     svg {
       margin-right: $s;

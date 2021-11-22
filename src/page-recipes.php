@@ -9,7 +9,7 @@ $paged = get_query_var('paged', 1);
 $args = array(
     'post_type' => 'przepisy',
     'post_status' => 'publish',
-    'posts_per_page' => 7,
+    'posts_per_page' => 100,
     'paged' => $paged
 );
 $posts = new WP_Query($args);

@@ -466,6 +466,8 @@ body.woocommerce div.product .woocommerce-tabs {
   cursor: pointer;
   border-style: solid;
   border-width: 1px;
+  position: absolute;
+  top: 40px;
 }
 
 
@@ -555,6 +557,6 @@ body .woocommerce .woocommerce-cart-form table.shop_table th {
 }
 
 
-.wp-block-group ul {
+.wp-block-group ul, .single-page ul {
   padding-left: 20px;
 }

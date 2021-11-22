@@ -2,27 +2,27 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 col-lg-2">
-                    <h5 class="text-center">GRATIS</h5>
-                    <p class="text-center">Dostawa od 250 zł</p>
+                    <h5 class="text-center"><?php echo get_field('dostawa_naglowek_kolumna_1', 53); ?></h5>
+                    <p class="text-center"><?php echo get_field('dostawa_opis_kolumna_1', 53); ?></p>
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <h5 class="text-center">ZWROT</h5>
-                    <p class="text-center">14 dni na zwrot towaru</p>
+                    <h5 class="text-center"><?php echo get_field('dostawa_naglowek_kolumna_2', 53); ?></h5>
+                    <p class="text-center"><?php echo get_field('dostawa_opis_kolumna_2', 53); ?></p>
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <h5 class="text-center">7,99 zł</h5>
-                    <p class="text-center">Paczka w RUCHu</p>
+                    <h5 class="text-center"><?php echo get_field('dostawa_naglowek_kolumna_3', 53); ?></h5>
+                    <p class="text-center"><?php echo get_field('dostawa_opis_kolumna_3', 53); ?></p>
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <h5 class="text-center">10,99</h5>
-                    <p class="text-center">InPost Paczkomaty 24/7</p>
+                    <h5 class="text-center"><?php echo get_field('dostawa_naglowek_kolumna_4', 53); ?></h5>
+                    <p class="text-center"><?php echo get_field('dostawa_opis_kolumna_4', 53); ?></p>
                 </div>
                 <div class="col-sm-4 col-lg-2">
-                    <h5 class="text-center">10,99 zł / 15,99 zł</h5>
-                    <p class="text-center">Kurier Poczta Polska / Kurier DPD / DHL</p>
+                    <h5 class="text-center"><?php echo get_field('dostawa_naglowek_kolumna_5', 53); ?></h5>
+                    <p class="text-center"><?php echo get_field('dostawa_opis_kolumna_5', 53); ?></p>
                 </div>
                 <div class="col-sm-4 col-lg-2 d-flex-centered">
-                    <a class="text-center more more--green" href="#">Dowiedz się więcej</a>
+                    <a class="text-center more more--green" href="/dostawa-platnosci-zwroty">Dowiedz się więcej</a>
                 </div>
             </div>
         </div>

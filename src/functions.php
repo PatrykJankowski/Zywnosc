@@ -177,7 +177,7 @@ function filter_function(){
                 <article class="recipes__post">
                     <img src="';
             echo wp_get_attachment_url(get_post_thumbnail_id($query->ID), 'thumbnail');
-            echo '" class="blog__image" alt="';
+            echo '" class="recipes__image" alt="';
             echo apply_filters('the_title', $query->post->post_title);
             echo '">
                   <div class="recipes__content">
