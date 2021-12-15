@@ -8,6 +8,10 @@
     border: 1px solid #DBEDD5;
   }
 
+  ul {
+    margin-left: $s;
+  }
+
   &__related-product {
     display: flex;
     flex-direction: column;
@@ -23,7 +27,8 @@
   }
 }
 
-.woocommerce img.post__image {
+.woocommerce img.post__image, .woocommerce .wcps-items-thumb img {
   height: 254px;
+  width: 100%;
   object-fit: cover;
 }

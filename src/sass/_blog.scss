@@ -6,7 +6,7 @@
     margin-bottom: $m;
 
     @include for-size(desktop) {
-      margin-bottom: 0;
+      margin-bottom: 20px;
     }
   }
 
@@ -110,4 +110,10 @@
 
 .next, .prev {
   font-weight: bold;
+}
+
+.related .blog__post {
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
 }

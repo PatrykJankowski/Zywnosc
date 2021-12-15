@@ -46,7 +46,7 @@
                         </svg>
                         <div class="contact__contact-info">
                             <span class="contact__contact-title">Tel.:</span>
-                            <span class="contact__contact-data">+48 555 555 555</span>
+                            <span class="contact__contact-data"><?php echo get_field('telefon', 2); ?></span>
                         </div>
                     </div>
                     <div class="contact__block">
@@ -81,10 +81,9 @@
                         <div class="contact__contact-info">
                             <span class="contact__contact-title">Infolinia czynna:</span>
                             <span class="contact__contact-data">
-                                Poniedziałek - Piątek:<br>
-                                9:00 - 17:30<br>
-                                Sobota:<br>
-                                11:00 - 17:00
+                                <?php echo get_field('infolinia_wiersz_1', 2); ?><br>
+                                <?php echo get_field('infolinia_wiersz_2', 2); ?><br>
+                                <?php echo get_field('infolinia_wiersz_3', 2); ?>
                             </span>
                         </div>
                     </div>
@@ -120,7 +119,7 @@
 
                         <div class="contact__contact-info">
                             <span class="contact__contact-title">E-mail:</span>
-                            <span class="contact__contact-data">zdrowie@email.com</span>
+                            <span class="contact__contact-data"><?php echo get_field('infolinia_email', 2); ?></span>
                         </div>
                     </div>
                     <div class="contact__block">
@@ -154,7 +153,7 @@
                         </svg>
                         <div class="contact__contact-info">
                             <span class="contact__contact-title">Adres.:</span>
-                            <span class="contact__contact-data">ul. Chopin 8A, 36-200 Brzozów</span>
+                            <span class="contact__contact-data"><?php echo get_field('adres', 2); ?></span>
                         </div>
                     </div>
                 </div>

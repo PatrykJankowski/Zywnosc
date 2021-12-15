@@ -15,8 +15,17 @@
   }
 
   &--product {
+    height: 100px;
+    background-color: #fbfbfd;
+
+    .text h1 {
+      color: $text-color;
+    }
+  }
+
+  &--page {
     height: 250px;
-    background-color: #F7F7FA;
+    background-color: #fbfbfd;
 
     .text h1 {
       color: $text-color;

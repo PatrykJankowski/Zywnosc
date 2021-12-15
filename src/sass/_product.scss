@@ -1,3 +1,10 @@
+.product-bc {
+   @include font-size(16);
+    font-family: 'Nunito', sans-serif;
+    color: $text-color;
+    font-weight: 400;
+}
+
 .woocommerce-loop-product__title {
     color: $text-color;
     text-align: center;
@@ -5,6 +12,10 @@
     font-family: Nunito, sans-serif;
     @include font-size(16);
     line-height: 22px;
+    min-height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .product .woocommerce-Price-amount.amount {

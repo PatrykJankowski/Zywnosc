@@ -153,7 +153,7 @@
     label {
       display: flex;
       align-items: center;
-      margin-bottom: $s;
+      margin-bottom: 30px;
 
       &:last-of-type {
         margin-bottom: 0;
@@ -168,3 +168,18 @@
     }
   }
 }
+
+.przepisy {
+  ul {
+    margin-left: 20px;
+  }
+
+  @include for-size(tablet-landscape) {
+    .attachment-post-thumbnail {
+      display: block;
+      margin-left: auto;
+    }
+  }
+}
+
+

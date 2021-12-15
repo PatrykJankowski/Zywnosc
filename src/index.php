@@ -42,7 +42,7 @@ $posts = new WP_Query($args);
                     <div class="blog__content">
                         <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                         <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                        <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?>
+                        <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 30, '...'); ?>
                         <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
                     </div>
                 </article>

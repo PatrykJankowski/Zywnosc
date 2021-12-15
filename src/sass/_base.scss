@@ -57,6 +57,9 @@ img {
   max-width: 100%;
 }
 
+figure {
+  margin: 0;
+}
 
 .hp-boxes-bg1 {
   position: absolute;
@@ -224,7 +227,11 @@ body .woocommerce a.remove {
   }
 }
 
-
+.woocommerce-Tabs-panel--description {
+  ul {
+    margin-left: $s;
+  }
+}
 
 
 
@@ -232,9 +239,9 @@ body .woocommerce a.remove {
 
 .categories {
   list-style: none;
-  background: $gray1;
+  background: #FCFCFD;
   margin-bottom: 60px;
-  border: 1px solid #EDF6EA;
+  border: 1px solid #DBEDD5;
 
   @media (min-width: 992px) {
     margin-bottom: 0;
@@ -250,6 +257,8 @@ body .woocommerce a.remove {
     > a {
       color: #43A628;
       font-weight: 700;
+      width: 100%;
+      border: 1px solid #DBEDD5;
     }
   }
 
@@ -261,18 +270,19 @@ body .woocommerce a.remove {
     }
 
     .wcsca-top-lvl.current-cat-parent, .wcsca-top-lvl.current-cat {
-      background: $green-light;
+      background: #EDF6EA;
     }
 
     .children {
       list-style: none;
-      background-color: $gray1;
+      background-color: #FCFCFD;
 
       .cat-item {
         font-weight: 400;
 
         a {
           padding: 10px 0 10px 20px;
+          border: none;
         }
       }
     }
@@ -333,6 +343,9 @@ body.woocommerce-cart table.cart td.actions .coupon .input-text {
 
 .widget_product_categories .wcsca-icon {
   margin: $s;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 
@@ -531,9 +544,10 @@ body .woocommerce ul.products li.product a img {
 
 //koszyk
 body .woocommerce .woocommerce-cart-form table.shop_table td {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   border-top: none;
+  @include font-size(17);
 }
 
 body .woocommerce .woocommerce-cart-form table.shop_table th {
@@ -559,4 +573,143 @@ body .woocommerce .woocommerce-cart-form table.shop_table th {
 
 .wp-block-group ul, .single-page ul {
   padding-left: 20px;
+}
+
+
+
+
+
+
+
+body.woocommerce nav.woocommerce-pagination ul li {
+  float: none;
+}
+
+.woocommerce nav.woocommerce-pagination ul li span.current, body.woocommerce nav.woocommerce-pagination ul li a {
+  display: flex;
+}
+
+
+
+
+
+
+body {
+  .favorites-list {
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  .favorites-list li {
+    border-top: none;
+    padding: .75em 10px;
+    margin: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      height: 300px;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  body .favorites-list li {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: $desktop) {
+  body .favorites-list li {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+}
+
+
+
+
+//frontpage products
+.owl-carousel .owl-item img {
+  max-height: 254px;
+  object-fit: cover;
+}
+
+
+.tinvwl-table-manage-list th {
+  text-align: left;
+}
+
+.woocommerce.related div.product span.price {
+  color: #acacac;
+}
+
+
+.woocommerce .products .woocommerce-loop-product__link .star-rating {
+  display: none;
+}
+
+.wcps-items-title {
+  min-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wcps-items-price del, .wishlist_item del {
+  font-family: Spectral, sans-serif;
+  font-weight: 700;
+  color: #acacac;
+  opacity: .5;
+  font-size: .857em;
+}
+
+.wcps-items-price ins, .wishlist_item ins {
+  font-family: Spectral, sans-serif;
+  font-weight: 700;
+  color: #43A628;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+body .layout-439 .layer-content, #wcps-259 .owl-nav.middle-fixed {
+  padding: 5px 0;
+}
+
+#wcps-217 .owl-nav.round button, #wcps-259 .owl-nav.round button {
+  border: none;
+  font-size: 26px;
+}
+
+
+body.woocommerce table.shop_attributes {
+  border-left: 1px solid #EEF2F5;
+  border-right: 1px solid #EEF2F5;
+}
+
+body.woocommerce table.shop_attributes th {
+  text-align: left;
+  border-color: #EEF2F5;
+  border-bottom-style: solid;
+}
+
+body.woocommerce table.shop_attributes td {
+  padding: 0 8px;
+  border-color: #EEF2F5;
+  border-bottom-style: solid;
+}
+
+body.woocommerce table.shop_attributes tr:nth-child(2n) td, body.woocommerce table.shop_attributes tr:nth-child(2n) th {
+  background: transparent;
 }

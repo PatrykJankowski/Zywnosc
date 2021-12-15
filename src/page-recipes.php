@@ -46,11 +46,10 @@ $posts = new WP_Query($args);
                         'orderby' => 'name'
                     ) ) ) :
                         foreach ( $terms as $term ) :
-                            echo '<label><input type="checkbox" checked name="categoryfilter[]" value="' . $term->term_id . '"><span>' . $term->name . '</span></label>';
+                            echo '<label class="checkbox-container">' . $term->name . '<input type="checkbox" checked name="categoryfilter[]" value="' . $term->term_id . '"><span class="checkmark"></span></label>';
                         endforeach;
                     endif;
                     ?>
-
                     <div id="loader" style="margin-top: 10px"></div>
                     <input type="hidden" name="action" value="myfilter">
                 </form>

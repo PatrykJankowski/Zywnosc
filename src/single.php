@@ -6,9 +6,11 @@
     </div>
 
     <?php
-    if ( has_post_thumbnail() ) {
-        the_post_thumbnail();
-    }
+        if ( get_field('img_top') ) { ?>
+            <img src="<?php echo get_field('img_top'); ?>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image">
+        <?php } else {
+            the_post_thumbnail();
+        }
     ?>
 </section>
 
@@ -128,11 +130,11 @@
 </script>
 
 <?php if (is_singular( array('przepisy'))): ?>
-<section class="section relative">
+<section class="section relative przepisy">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <h3 class="header header--mb-xs mt-n"><?php the_title(); ?></h3>
+                <h2 class="header header--mb-xs mt-n"><?php the_title(); ?></h2>
                 <div>
                     <?php the_content(); ?>
                 </div>
@@ -155,7 +157,7 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <h3 class="header header--mb-xs mt-n"><?php the_title(); ?></h3>
+                    <h2 class="header header--mb-xs mt-n"><?php the_title(); ?></h2>
                     <div>
                         <?php the_content(); ?>
                     </div>
@@ -197,7 +199,7 @@
                         <?php if ($featured_product_2): ?>
                         <div class="post__related-product product">
                             <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($featured_product_2->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $featured_product_2->post->post_title); ?>"></a>
-                            <?php echo esc_html( $featured_product_2->post_title ); ?>
+                           <?php echo esc_html( $featured_product_2->post_title ); ?>
 
                             <span class="price">
                                 <?php if ($product_2->get_sale_price()): ?>
@@ -232,19 +234,16 @@
 
 <?php
 global $wp_query;
-$paged = get_query_var('paged', 1);
 
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 4,
-    'paged' => $paged
+    'posts_per_page' => 4
 );
 $posts = new WP_Query($args);
+$posts->set('posts_per_page', 4);
+$posts->query($posts->query_vars);
 ?>
-
-
-
 
 <?php if (!is_singular( array('przepisy'))): ?>
 
@@ -261,7 +260,7 @@ $posts = new WP_Query($args);
                                 <div class="blog__content">
                                     <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                                     <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                                    <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?>
+                                    <?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 30, '...'); ?>
                                     <a href="<?php echo the_permalink(); ?>" class="blog__link">Czytaj więcej...</a>
                                     <?php echo '<!-- (' . get_the_score() . ')-->'; ?>
                                 </div>
@@ -278,8 +277,16 @@ $posts = new WP_Query($args);
 
     <?php $recipe_product_1 = get_field('recipe_product_1'); ?>
     <?php $recipe_product_2 = get_field('recipe_product_2'); ?>
+    <?php $recipe_product_3 = get_field('recipe_product_3'); ?>
+    <?php $recipe_product_4 = get_field('recipe_product_4'); ?>
+    <?php $recipe_product_5 = get_field('recipe_product_5'); ?>
+    <?php $recipe_product_6 = get_field('recipe_product_6'); ?>
     <?php $product_1 = new WC_Product($recipe_product_1->ID); ?>
     <?php $product_2 = new WC_Product($recipe_product_2->ID); ?>
+    <?php $product_3 = new WC_Product($recipe_product_3->ID); ?>
+    <?php $product_4 = new WC_Product($recipe_product_4->ID); ?>
+    <?php $product_5 = new WC_Product($recipe_product_5->ID); ?>
+    <?php $product_6 = new WC_Product($recipe_product_6->ID); ?>
 
     <?php if ($recipe_product_1): ?>
     <section class="section bg-gray1 pt-60 pb-60 related woocommerce">
@@ -290,7 +297,7 @@ $posts = new WP_Query($args);
                 <div class="col-sm-3 col-lg-2">
                     <div class="post__related-product post__related-product--first product">
                         <a href="<?php echo get_permalink( $product_1->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_1->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_1->post->post_title); ?>"></a>
-                        <?php echo esc_html( $recipe_product_1->post_title ); ?>
+                        <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_1->post_title ); ?></h4>
 
                         <span class="price">
                             <?php if ($product_1->get_sale_price()): ?>
@@ -315,7 +322,7 @@ $posts = new WP_Query($args);
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
                             <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_2->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_2->post->post_title); ?>"></a>
-                            <?php echo esc_html( $recipe_product_2->post_title ); ?>
+                            <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_2->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_2->get_sale_price()): ?>
@@ -333,6 +340,106 @@ $posts = new WP_Query($args);
                         </span>
 
                             <a href="?add-to-cart=<?php echo $recipe_product_2->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $recipe_product_2->ID;?>" aria-label="Dodaj <?php echo $recipe_product_2->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php if ($recipe_product_3): ?>
+                    <div class="col-sm-3 col-lg-2">
+                        <div class="post__related-product post__related-product--first product">
+                            <a href="<?php echo get_permalink( $product_3->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_3->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_3->post->post_title); ?>"></a>
+                            <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_3->post_title ); ?></h4>
+
+                            <span class="price">
+                            <?php if ($product_3->get_sale_price()): ?>
+                                <del aria-hidden="true">
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_3->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </del>
+                            <?php endif; ?>
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_3->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </ins>
+                        </span>
+
+                            <a href="?add-to-cart=<?php echo $recipe_product_3->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $recipe_product_3->ID;?>" aria-label="Dodaj <?php echo $recipe_product_3->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php if ($recipe_product_4): ?>
+                    <div class="col-sm-3 col-lg-2">
+                        <div class="post__related-product post__related-product--first product">
+                            <a href="<?php echo get_permalink( $product_4->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_4->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_4->post->post_title); ?>"></a>
+                            <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_4->post_title ); ?></h4>
+
+                            <span class="price">
+                            <?php if ($product_4->get_sale_price()): ?>
+                                <del aria-hidden="true">
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_4->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </del>
+                            <?php endif; ?>
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_4->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </ins>
+                        </span>
+
+                            <a href="?add-to-cart=<?php echo $recipe_product_4->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $recipe_product_4->ID;?>" aria-label="Dodaj <?php echo $recipe_product_4->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php if ($recipe_product_5): ?>
+                    <div class="col-sm-3 col-lg-2">
+                        <div class="post__related-product post__related-product--first product">
+                            <a href="<?php echo get_permalink( $product_5->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_5->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_5->post->post_title); ?>"></a>
+                            <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_5->post_title ); ?></h4>
+
+                            <span class="price">
+                            <?php if ($product_5->get_sale_price()): ?>
+                                <del aria-hidden="true">
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_5->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </del>
+                            <?php endif; ?>
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_5->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </ins>
+                        </span>
+
+                            <a href="?add-to-cart=<?php echo $recipe_product_5->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $recipe_product_5->ID;?>" aria-label="Dodaj <?php echo $recipe_product_5->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                        </div>
+                    </div>
+                <?php endif; ?>
+                <?php if ($recipe_product_6): ?>
+                    <div class="col-sm-3 col-lg-2">
+                        <div class="post__related-product post__related-product--first product">
+                            <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_6->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_6->post->post_title); ?>"></a>
+                            <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_6->post_title ); ?></h4>
+
+                            <span class="price">
+                            <?php if ($product_6->get_sale_price()): ?>
+                                <del aria-hidden="true">
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_6->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </del>
+                            <?php endif; ?>
+                            <ins>
+                                <span class="woocommerce-Price-amount amount">
+                                    <bdi><?php echo $product_6->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                </span>
+                            </ins>
+                        </span>
+
+                            <a href="?add-to-cart=<?php echo $recipe_product_6->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $recipe_product_6->ID;?>" aria-label="Dodaj <?php echo $recipe_product_6->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
                         </div>
                     </div>
                 <?php endif; ?>

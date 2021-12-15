@@ -14,35 +14,47 @@
     <div class="slideshow-container">
 
         <!-- Full-width images with number and caption text -->
+        <?php if (get_field('slider_zdjecie_1')): ?>
         <div class="slide fade">
-            <img src="/wp-content/themes/zywnosc/img/slide1.webp" style="width:100%">
+            <img src="<?php echo get_field('slider_zdjecie_1') ?>" style="width:100%">
             <div class="container container-slider">
                 <div class="text">
-                    <span>Zdrowe, dietetyczne, odżywcze? Sprawdź nasze produkty!</span>
-                    <a class="button" href="#">Czytaj więcej</a>
+                    <span><?php echo get_field('slider_opis_1') ?></span>
+                    <?php if (get_field('slider_link_1')): ?>
+                    <a class="button" href="<?php echo get_field('slider_link_1') ?>">Czytaj więcej</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
+        <?php if (get_field('slider_zdjecie_2')): ?>
         <div class="slide fade">
-            <img src="/wp-content/themes/zywnosc/img/slide1.webp" style="width:100%">
+            <img src="<?php echo get_field('slider_zdjecie_2') ?>" style="width:100%">
             <div class="container container-slider">
                 <div class="text">
-                    <span>Zdrowe, dietetyczne, odżywcze?</span>
-                    <a class="button" href="#">Czytaj więcej</a>
+                    <span><?php echo get_field('slider_opis_2') ?></span>
+                    <?php if (get_field('slider_link_2')): ?>
+                    <a class="button" href="<?php echo get_field('slider_link_2') ?>">Czytaj więcej</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
+        <?php if (get_field('slider_zdjecie_3')): ?>
         <div class="slide fade">
-            <img src="/wp-content/themes/zywnosc/img/slide1.webp" style="width:100%">
+            <img src="<?php echo get_field('slider_zdjecie_3') ?>" style="width:100%">
             <div class="container container-slider">
                 <div class="text">
-                    <span>Sprawdź nasze produkty!</span>
-                    <a class="button" href="#">Czytaj więcej</a>
+                    <span><?php echo get_field('slider_opis_3') ?></span>
+                    <?php if (get_field('slider_link_3')): ?>
+                    <a class="button" href="<?php echo get_field('slider_link_3') ?>">Czytaj więcej</a>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>
+        <?php endif; ?>
 
         <!-- Next and previous buttons -->
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -51,9 +63,14 @@
 
     <!-- The dots/circles -->
     <div class="dots">
+        <?php if (get_field('slider_zdjecie_2')): ?>
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
+        <?php endif; ?>
+
+        <?php if (get_field('slider_zdjecie_3')): ?>
         <span class="dot" onclick="currentSlide(3)"></span>
+        <?php endif; ?>
     </div>
 </section>
 
@@ -97,7 +114,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php echo do_shortcode('[sale_products per_page="6" columns="6" order="asc"]'); ?>
+                <?php /*echo do_shortcode('[sale_products per_page="6" columns="6" order="asc"]'); */?>
+                <?php echo do_shortcode("[wcps id='217']"); ?>
             </div>
         </div>
     </div>
@@ -112,7 +130,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php echo do_shortcode('[recent_products per_page="6" columns="6" order="dsc"]'); ?>
+                <?php /*echo do_shortcode('[recent_products per_page="6" columns="6" order="dsc"]'); */?>
+                <?php echo do_shortcode("[wcps id='259']"); ?>
             </div>
         </div>
     </div>
@@ -236,10 +255,12 @@
     $args = array(
         'post_type' => 'post',
         'post_status' => 'publish',
-        'posts_per_page' => 4,
+        'posts_per_page' => 4
     );
     $posts = new WP_Query($args);
-?>
+    $posts->set('posts_per_page', 4);
+    $posts->query($posts->query_vars);
+    ?>
 
 <section class="pt-80 pb-80 bg-gray2">
     <div class="container">
@@ -257,7 +278,7 @@
                         <div class="article">
                             <div class="article__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                             <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                            <div class="article__content"><?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 60, '...'); ?></div>
+                            <div class="article__content"><?php echo wp_trim_words(wp_strip_all_tags(apply_filters( 'the_content', $posts->post->post_content)), 30, '...'); ?></div>
                             <span class="article__more">Czytaj więcej...</span>
                         </div>
                     </a>
