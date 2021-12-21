@@ -4,18 +4,22 @@
 <div class="product-top">
     <section>
         <div class="top top--product">
-            <div class="container container-slider">
-                <div class="text"><?php
-                    global $product;
-                    $categories = [];
+            <div class="container relative">
+                <div class="row">
+                    <div class="col">
+                        <div class="text"><?php
+                            global $product;
+                            $categories = [];
 
-                    $product_cats_ids = wc_get_product_term_ids(get_the_ID(), 'product_cat');
-                    foreach( $product_cats_ids as $cat_id ) {
-                        $term = get_term_by( 'id', $cat_id, 'product_cat' );
-                        array_push($categories, $term->name);
-                    }
-                    ?>
-                    <div class="product-bc"><?php echo implode(', ', $categories) . ' / <b>' .get_the_title(get_the_ID()) . '</b>' ?></div>
+                            $product_cats_ids = wc_get_product_term_ids(get_the_ID(), 'product_cat');
+                            foreach( $product_cats_ids as $cat_id ) {
+                                $term = get_term_by( 'id', $cat_id, 'product_cat' );
+                                array_push($categories, $term->name);
+                            }
+                            ?>
+                            <div class="product-bc"><?php echo implode(', ', $categories) . ' / <b>' .get_the_title(get_the_ID()) . '</b>' ?></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

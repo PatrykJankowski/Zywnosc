@@ -52,7 +52,7 @@ $posts = new WP_Query($args);
         <?php
         wp_reset_query();
 
-        //manage pagination based on custom Query.
+        // manage pagination based on custom query
         $GLOBALS['wp_query']->max_num_pages = $posts->max_num_pages;
 
         the_posts_pagination(array(

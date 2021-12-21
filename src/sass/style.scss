@@ -2,7 +2,7 @@
 Theme Name: Zdrowa żywność
 Theme URI: https://github.com/patrykjankowski/Softcraft
 Author: Patryk Jankowski
-Author URI: https://softcraft.it
+Author URI: https://softcraft.pl
 Description: Zdrowa żywność – sklep internetowy
 Version: 1.0.0
 Text Domain: Softcraft – Crafting digital experience
@@ -31,6 +31,8 @@ Text Domain: Softcraft – Crafting digital experience
 @import "top";
 @import "contact";
 @import "post";
+@import "favourites";
+@import "woocommerce";
 
 
 
