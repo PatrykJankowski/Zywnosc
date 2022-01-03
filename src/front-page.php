@@ -114,8 +114,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php /*echo do_shortcode('[sale_products per_page="6" columns="6" order="asc"]'); */?>
-                <?php echo do_shortcode("[wcps id='217']"); ?>
+                <?php echo do_shortcode('[sale_products per_page="6" columns="6" order="asc"]'); ?>
+                <?php /*echo do_shortcode("[wcps id='217']"); */?>
             </div>
         </div>
     </div>
@@ -130,8 +130,8 @@
         </div>
         <div class="row">
             <div class="col">
-                <?php /*echo do_shortcode('[recent_products per_page="6" columns="6" order="dsc"]'); */?>
-                <?php echo do_shortcode("[wcps id='259']"); ?>
+                <?php echo do_shortcode('[recent_products per_page="6" columns="6" order="dsc"]'); ?>
+                <?php /*echo do_shortcode("[wcps id='259']"); */?>
             </div>
         </div>
     </div>

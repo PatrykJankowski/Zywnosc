@@ -18,6 +18,33 @@ add_action('init', function() {
     remove_action('admin_print_styles', 'print_emoji_styles');
 }, PHP_INT_MAX - 1);
 
+// change woocommerce gallery image size
+add_filter( 'woocommerce_get_image_size_single', 'override_woocommerce_image_size_single' );
+function override_woocommerce_image_size_single( $size ) {
+    // Single product image size
+    return array(
+        'width'  => '',
+        'height' => 500,
+        'crop'   => 1,
+    );
+}
+
+// change woocommerce thumbnail image size
+add_filter( 'woocommerce_get_image_size_gallery_thumbnail', 'override_woocommerce_image_size_gallery_thumbnail' );
+function override_woocommerce_image_size_gallery_thumbnail( $size ) {
+    // Gallery thumbnails: proportional, max width 200px
+    return array(
+        'width'  => '',
+        'height' => 150,
+        'crop'   => 0,
+    );
+}
+
+
+add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
+    return array('width' => 300, 'height' => 310, 'crop' => 1, );
+} );
+
 
 
 add_action('after_setup_theme', 'setup');
@@ -215,7 +242,17 @@ function jk_related_products_args( $args ) {
 }
 
 
+/**
+ * Change number of products that are displayed per page (shop page)
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
+function new_loop_shop_per_page( $cols ) {
+    // $cols contains the current number of products per page based on the value stored on Options –> Reading
+    // Return the number of products you wanna show per page.
+    $cols = 28;
+    return $cols;
+}
 
 
 

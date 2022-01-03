@@ -158,7 +158,7 @@ body .woocommerce a.remove {
 
   a {
     display: inline-flex;
-    padding: 20px 0 20px 20px;
+    padding: 8px 0 8px 20px;
     color: #444;
   }
 
@@ -190,7 +190,7 @@ body .woocommerce a.remove {
         font-weight: 400;
 
         a {
-          padding: 10px 0 10px 20px;
+          padding: 4px 0 0 20px;
           border: none;
         }
       }
@@ -251,7 +251,7 @@ body.woocommerce-cart table.cart td.actions .coupon .input-text {
 
 
 .widget_product_categories .wcsca-icon {
-  margin: $s;
+  margin: 9px 12px;
   position: absolute;
   top: 0;
   right: 0;
@@ -343,7 +343,7 @@ body.woocommerce div.product .woocommerce-tabs {
       }
 
       &.active {
-        color: $primary;
+        color: #43A628;
       }
     }
   }
@@ -367,7 +367,7 @@ body.woocommerce div.product .woocommerce-tabs {
           margin: 0 -3px;
           width: 2rem;
           @include font-size(22);
-          color: $primary;
+          color: #43A628;
         }
       }
     }
@@ -399,10 +399,10 @@ body.woocommerce div.product .woocommerce-tabs {
 
 body {
   .woocommerce-info {
-    border-top-color: $primary;
+    border-top-color: #43A628;
 
     &:before {
-      color: $primary;
+      color: #43A628;
     }
   }
 }
@@ -434,8 +434,8 @@ body.woocommerce-account .addresses .title .edit {
 
 
 body .woocommerce ul.products li.product a img {
-  height: 254px;
-  object-fit: cover;
+  //height: 254px;
+  object-fit: contain;
 }
 
 

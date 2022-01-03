@@ -7,7 +7,7 @@ $paged = get_query_var('paged', 1);
 $args = array(
     'post_type' => 'post',
     'post_status' => 'publish',
-    'posts_per_page' => 7,
+    'posts_per_page' => 12,
     'paged' => $paged
 );
 $posts = new WP_Query($args);
@@ -38,7 +38,7 @@ $posts = new WP_Query($args);
         <?php while ($posts->have_posts()) : $posts->the_post(); ?>
             <div class="col-md-4 col-xl-3">
                 <article class="blog__post">
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                    <a href="<?php echo the_permalink(); ?>"><img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>"></a>
                     <div class="blog__content">
                         <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                         <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>

@@ -88,14 +88,14 @@
       list-style: none;
 
       li {
-        padding-right: 6px;
+        padding-right: 11px;
 
         @media only screen and (min-width: 1200px) {
-          padding-right: 22px;
+          padding-right: 28px;
         }
 
-        @media only screen and (min-width: 1400px) {
-          padding-right: 45px;
+        @media only screen and (min-width: 1460px) {
+          padding-right: 60px;
         }
 
         &:last-of-type {

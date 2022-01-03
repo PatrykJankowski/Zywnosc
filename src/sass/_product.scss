@@ -113,3 +113,23 @@ body.single-product {
         display: block;
     }
 }
+
+body.woocommerce div.product div.images .woocommerce-product-gallery__image a img {
+    width: auto;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+/*.woocommerce-product-gallery__image {
+    height: 400px;
+
+    a {
+        height: 100%;
+        display: flex;
+    }
+
+    a > img {
+        height: 100%;
+        object-fit: cover;
+    }
+}*/

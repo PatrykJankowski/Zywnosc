@@ -20,16 +20,32 @@ body {
       object-fit: cover;
       height: 300px;
     }
-
-    a {
-      text-decoration: underline;
-    }
   }
+}
+
+.favorites-list > li > p {
+  text-align: justify;
+}
+
+.favorites-list > li > p:nth-of-type(2) {
+  margin: 0;
 }
 
 .favorites-list > li > p > a {
   font-weight: 700;
-  font-size: 22px;
+  @include font-size(22);
+}
+
+
+.tinv-wishlist table td.product-price > .amount > bdi {
+  font-family: Spectral, sans-serif;
+  font-weight: 700;
+  color: #43A628;
+  font-size: 1.125rem;
+}
+
+.page-template-page-favourites-products .woocommerce button.button {
+  font-weight: normal;
 }
 
 @media (min-width: $tablet) {
