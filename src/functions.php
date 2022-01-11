@@ -3,7 +3,7 @@
 add_filter('wp_enqueue_scripts', 'remove_shit', PHP_INT_MAX);
 
 function remove_shit() {
-    wp_dequeue_style('wp-block-library');
+    //wp_dequeue_style('wp-block-library');
     //wp_dequeue_style( 'contact-form-7' );
 }
 

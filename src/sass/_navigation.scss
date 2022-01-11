@@ -11,6 +11,14 @@
   //background: transparent;
   //transition: all 0.5s ease;
   //margin-top: 60px;
+  top: 0;
+  background: white;
+  z-index: 10;
+  transition: all 300ms;
+
+  &.fixed {
+    position: fixed;
+  }
 
   &__bar {
     display: none;
@@ -206,4 +214,9 @@
   .navbar__nav-desktop {
     display: flex;
   }
+}
+
+
+.fixed-mt {
+  margin-top: 145px;
 }

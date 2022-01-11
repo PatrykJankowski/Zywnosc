@@ -61,3 +61,8 @@ body {
     max-width: 25%;
   }
 }
+
+
+@media only screen and (max-width:768px){
+  body .tinv-wishlist .product-thumbnail img {max-width:initial;}
+}

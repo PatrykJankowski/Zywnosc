@@ -164,8 +164,14 @@
                 </div>
                 <?php $featured_product_1 = get_field('product_1'); ?>
                 <?php $featured_product_2 = get_field('product_2'); ?>
+                <?php $featured_product_3 = get_field('product_3'); ?>
+                <?php $featured_product_4 = get_field('product_4'); ?>
+                <?php $featured_product_5 = get_field('product_5'); ?>
                 <?php $product_1 = new WC_Product($featured_product_1->ID); ?>
                 <?php $product_2 = new WC_Product($featured_product_2->ID); ?>
+                <?php $product_3 = new WC_Product($featured_product_3->ID); ?>
+                <?php $product_4 = new WC_Product($featured_product_4->ID); ?>
+                <?php $product_5 = new WC_Product($featured_product_5->ID); ?>
 
                 <?php if ($featured_product_1): ?>
                 <div class="col-sm-3">
@@ -220,6 +226,77 @@
                         </div>
                         <?php endif; ?>
 
+                        <?php if ($featured_product_3): ?>
+                            <div class="post__related-product product">
+                                <a href="<?php echo get_permalink( $product_3->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($featured_product_3->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $featured_product_3->post->post_title); ?>"></a>
+                                <?php echo esc_html( $featured_product_3->post_title ); ?>
+
+                                <span class="price">
+                                <?php if ($product_3->get_sale_price()): ?>
+                                    <del aria-hidden="true">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_3->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </del>
+                                <?php endif; ?>
+                                <ins>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_3->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </ins>
+                            </span>
+
+                                <a href="?add-to-cart=<?php echo $featured_product_3->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $featured_product_3->ID;?>" aria-label="Dodaj <?php echo $featured_product_3->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($featured_product_4): ?>
+                            <div class="post__related-product product">
+                                <a href="<?php echo get_permalink( $product_4->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($featured_product_4->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $featured_product_4->post->post_title); ?>"></a>
+                                <?php echo esc_html( $featured_product_4->post_title ); ?>
+
+                                <span class="price">
+                                <?php if ($product_4->get_sale_price()): ?>
+                                    <del aria-hidden="true">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_4->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </del>
+                                <?php endif; ?>
+                                <ins>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_4->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </ins>
+                            </span>
+
+                                <a href="?add-to-cart=<?php echo $featured_product_4->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $featured_product_4->ID;?>" aria-label="Dodaj <?php echo $featured_product_4->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if ($featured_product_5): ?>
+                            <div class="post__related-product product">
+                                <a href="<?php echo get_permalink( $product_5->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($featured_product_5->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $featured_product_5->post->post_title); ?>"></a>
+                                <?php echo esc_html( $featured_product_5->post_title ); ?>
+
+                                <span class="price">
+                                <?php if ($product_5->get_sale_price()): ?>
+                                    <del aria-hidden="true">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_5->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </del>
+                                <?php endif; ?>
+                                <ins>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <bdi><?php echo $product_5->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    </span>
+                                </ins>
+                            </span>
+
+                                <a href="?add-to-cart=<?php echo $featured_product_5->ID; ?>" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="<?php echo $featured_product_5->ID;?>" aria-label="Dodaj <?php echo $featured_product_5->post_title ?> do koszyka" rel="nofollow">Dodaj do koszyka</a>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <?php endif; ?>

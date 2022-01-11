@@ -34,7 +34,7 @@ $posts = new WP_Query($args);
 </section>
 
 
-<section class="section pb-80">
+<section class="section pb-0-m pb-80">
     <div class="container">
 
         <div class="row">

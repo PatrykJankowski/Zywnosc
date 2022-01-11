@@ -65,6 +65,15 @@
     display: flex;
   }
 
+  &__form-wrapper {
+    @media (min-width: 992px) {
+      padding-left: 50px;
+    }
+    @media (min-width: 1200px) {
+      padding-left: 100px;
+    }
+  }
+
   form {
     margin-top: $l;
 

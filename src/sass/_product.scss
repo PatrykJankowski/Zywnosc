@@ -114,10 +114,23 @@ body.single-product {
     }
 }
 
+.woocommerce div.product span.price {
+    color: #444;
+}
+
 body.woocommerce div.product div.images .woocommerce-product-gallery__image a img {
     width: auto;
     margin: 0 auto;
     min-height: 500px;
+    object-fit: contain;
+}
+
+body .tinv-wishlist .tinvwl_add_to_wishlist_button.tinvwl-icon-heart::before {
+    color: #ff8686;
+}
+
+.woocommerce .woocommerce-product-rating .star-rating {
+    color: #43A628;
 }
 
 /*.woocommerce-product-gallery__image {

@@ -23,7 +23,6 @@
 <section class="section contact relative">
     <div class="container">
         <div class="row">
-        <div class="row">
             <div class="col-lg-4">
                 <div class="contact__wrapper">
                     <h2 class="contact__header">Kontakt</h2>
@@ -119,7 +118,7 @@
 
                         <div class="contact__contact-info">
                             <span class="contact__contact-title">E-mail:</span>
-                            <span class="contact__contact-data"><?php echo get_field('infolinia_email', 2); ?></span>
+                            <span class="contact__contact-data"><?php echo get_field('email', 2); ?></span>
                         </div>
                     </div>
                     <div class="contact__block">
@@ -158,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-8" style="padding-left: 100px">
+            <div class="col-lg-8 contact__form-wrapper">
                 <h2>Masz pytanie?</h2>
                 <p>Skontaktuj się z nami!</p>
                 <?php echo do_shortcode('[contact-form-7 id="99" title="Kontakt"]'); ?>

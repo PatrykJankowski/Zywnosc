@@ -44,6 +44,15 @@
     font-weight: 700;
   }
 
+  &__social-wrapper {
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      justify-content: left;
+    }
+  }
+
   .menu {
     li {
       list-style: none;
