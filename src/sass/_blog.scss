@@ -57,8 +57,13 @@
     @include font-size(14);
   }
 
+  &__link_wrapper {
+    display: flex;
+  }
+
   &__image {
     height: 230px;
+    width: 100%;
     object-fit: cover;
     margin-bottom: 10px;
   }

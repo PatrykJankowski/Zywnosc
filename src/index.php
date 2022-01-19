@@ -70,7 +70,7 @@ $posts = new WP_Query($args);
 <section class="section extra-text pb-20 pt-20">
     <div class="container">
         <div class="row">
-            <p>Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia. Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia. Orzechy są najbardziej wartościowe ze wszystkich bakalii. Co prawda mają dużo tłuszczu i kalorii, ale są to korzystne dla zdrowia nienasycone kwasy tłuszczowe, zmniejszające ryzyko chorób serca. Orzechy mają wiele właściwości korzystnych dla zdrowia.</p>
+            <p><?php echo get_field('text_seo', 56) ?></p>
         </div>
     </div>
 </section>

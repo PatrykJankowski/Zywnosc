@@ -83,16 +83,16 @@
         <div class="row">
             <div class="col-lg-6">
                 <div class="box">
-                    <p>Przepisy</p>
-                    <h3 class="box__header">Inspiracje kulinarne</h3>
-                    <a class="box__link" href="przepisy">Zobacz przepisy</a>
+                    <p><?php echo get_field('box_1_subtitle') ?></p>
+                    <h3 class="box__header"><?php echo get_field('box_1_title') ?></h3>
+                    <a class="box__link" href="<?php echo get_field('box_1_link') ?>"><?php echo get_field('box_1_link_text') ?></a>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="box box--box-2">
-                    <p>Blog</p>
-                    <h3 class="box__header">Naturalna pielęgnacja</h3>
-                    <a class="box__link" href="blog">Zobacz artykuły</a>
+                    <p><?php echo get_field('box_2_subtitle') ?></p>
+                    <h3 class="box__header"><?php echo get_field('box_2_title') ?></h3>
+                    <a class="box__link" href="<?php echo get_field('box_2_link') ?>"><?php echo get_field('box_2_link_text') ?></a>
                 </div>
             </div>
         </div>
@@ -245,10 +245,10 @@
                 <div class="col-6 col-lg-3">
                     <a class="recipes__link_wrapper" href="<?php echo the_permalink(); ?>">
                         <span class="more more--cover">Czytaj</span>
-                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="article__img" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
-                    <div class="article">
-                        <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
-                    </div>
+                        <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="article__img" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                        <div class="article">
+                            <h3 class="article__header"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
+                        </div>
                     </a>
                 </div>
             <?php endwhile; wp_reset_query(); ?>

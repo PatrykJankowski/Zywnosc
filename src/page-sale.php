@@ -20,7 +20,7 @@
     </div>
 </section>
 
-<section class="section pt-60-m">
+<section class="section pt-60-m pb-60-m">
     <div class="container">
         <div class="row">
             <div class="col">

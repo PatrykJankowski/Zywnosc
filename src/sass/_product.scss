@@ -114,8 +114,8 @@ body.single-product {
     }
 }
 
-.woocommerce div.product span.price {
-    color: #444;
+.woocommerce div.product span.price, .post .product del .woocommerce-Price-amount.amount {
+    color: #acacac;
 }
 
 body.woocommerce div.product div.images .woocommerce-product-gallery__image a img {

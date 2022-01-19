@@ -3,6 +3,12 @@
 }
 
 .woocommerce-section {
+  padding: $m 0;
+
+  @media only screen and (min-width: $desktop) {
+    padding: $l 0 $l;
+  }
+
   .page-title {
     display: none;
   }

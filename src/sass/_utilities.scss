@@ -66,6 +66,11 @@
   }
 }
 
+.pb-60-m {
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+  }
+}
 
 .bg-gray1 {
   background-color: $gray1;

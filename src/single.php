@@ -187,13 +187,13 @@
                                 <?php if ($product_1->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_1->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_1->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </del>
                                 <?php endif; ?>
                                 <ins>
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_1->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_1->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </ins>
                             </span>
@@ -211,13 +211,13 @@
                                 <?php if ($product_2->get_sale_price()): ?>
                                     <del aria-hidden="true">
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_2->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_2->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </del>
                                 <?php endif; ?>
                                 <ins>
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_2->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_2->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </ins>
                             </span>
@@ -235,13 +235,13 @@
                                 <?php if ($product_3->get_sale_price()): ?>
                                     <del aria-hidden="true">
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_3->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_3->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </del>
                                 <?php endif; ?>
                                 <ins>
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_3->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_3->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </ins>
                             </span>
@@ -259,13 +259,13 @@
                                 <?php if ($product_4->get_sale_price()): ?>
                                     <del aria-hidden="true">
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_4->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_4->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </del>
                                 <?php endif; ?>
                                 <ins>
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_4->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_4->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </ins>
                             </span>
@@ -283,13 +283,13 @@
                                 <?php if ($product_5->get_sale_price()): ?>
                                     <del aria-hidden="true">
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_5->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_5->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </del>
                                 <?php endif; ?>
                                 <ins>
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi><?php echo $product_5->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                        <bdi><?php echo str_replace('.', ',', $product_5->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                     </span>
                                 </ins>
                             </span>
@@ -333,7 +333,9 @@ $posts->query($posts->query_vars);
                         $posts->the_post(); ?>
                         <div class="col-3">
                             <article class="blog__post">
-                                <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                                <a class="blog__link_wrapper" href="<?php echo the_permalink(); ?>">
+                                    <img src="<?php echo wp_get_attachment_url( get_post_thumbnail_id($posts->ID), 'thumbnail' ); ?>" class="blog__image" alt="<?php echo apply_filters('the_title', $posts->post->post_title); ?>">
+                                </a>
                                 <div class="blog__content">
                                     <div class="blog__date"><?php echo apply_filters('the_date', mysql2date('d.m.Y', $posts->post->post_date)); ?></div>
                                     <h3 class="blog__title"><?php echo apply_filters('the_title', $posts->post->post_title); ?></h3>
@@ -373,20 +375,19 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_1): ?>
                 <div class="col-sm-3 col-lg-2">
                     <div class="post__related-product post__related-product--first product">
-                        <a href="<?php echo get_permalink( $product_1->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_1->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_1->post->post_title); ?>"></a>
+                        <a href="<?php echo get_permalink( $product_1->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_1->ID, array( 300, 310) ); ?></a>
                         <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_1->post_title ); ?></h4>
-
                         <span class="price">
                             <?php if ($product_1->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_1->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_1->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_1->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_1->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>
@@ -398,20 +399,20 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_2): ?>
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
-                            <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_2->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_2->post->post_title); ?>"></a>
+                            <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_2->ID, array( 300, 310) ); ?></a>
                             <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_2->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_2->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_2->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_2->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_2->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_2->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>
@@ -423,20 +424,20 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_3): ?>
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
-                            <a href="<?php echo get_permalink( $product_3->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_3->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_3->post->post_title); ?>"></a>
+                            <a href="<?php echo get_permalink( $product_3->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_3->ID, array( 300, 310) ); ?></a>
                             <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_3->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_3->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_3->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_3->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_3->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_3->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>
@@ -448,20 +449,20 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_4): ?>
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
-                            <a href="<?php echo get_permalink( $product_4->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_4->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_4->post->post_title); ?>"></a>
+                            <a href="<?php echo get_permalink( $product_4->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_4->ID, array( 300, 310) ); ?></a>
                             <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_4->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_4->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_4->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_4->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_4->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_4->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>
@@ -473,20 +474,20 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_5): ?>
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
-                            <a href="<?php echo get_permalink( $product_5->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_5->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_5->post->post_title); ?>"></a>
+                            <a href="<?php echo get_permalink( $product_5->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_5->ID, array( 300, 310) ); ?></a>
                             <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_5->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_5->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_5->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_5->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_5->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_5->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>
@@ -498,20 +499,20 @@ $posts->query($posts->query_vars);
                 <?php if ($recipe_product_6): ?>
                     <div class="col-sm-3 col-lg-2">
                         <div class="post__related-product post__related-product--first product">
-                            <a href="<?php echo get_permalink( $product_2->get_id()); ?>"><img src="<?php echo wp_get_attachment_url(get_post_thumbnail_id($recipe_product_6->ID), 'thumbnail' ); ?>" class="post__image" alt="<?php echo apply_filters('the_title', $recipe_product_6->post->post_title); ?>"></a>
+                            <a href="<?php echo get_permalink( $product_6->get_id()); ?>"><?php echo get_the_post_thumbnail( $recipe_product_6->ID, array( 300, 310) ); ?></a>
                             <h4 class="woocommerce-loop-product__title"><?php echo esc_html( $recipe_product_6->post_title ); ?></h4>
 
                             <span class="price">
                             <?php if ($product_6->get_sale_price()): ?>
                                 <del aria-hidden="true">
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_6->get_sale_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_6->get_sale_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </del>
                             <?php endif; ?>
                             <ins>
                                 <span class="woocommerce-Price-amount amount">
-                                    <bdi><?php echo $product_6->get_price(); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
+                                    <bdi><?php echo str_replace('.', ',', $product_6->get_regular_price()); ?>&nbsp;<span class="woocommerce-Price-currencySymbol">zł</span></bdi>
                                 </span>
                             </ins>
                         </span>

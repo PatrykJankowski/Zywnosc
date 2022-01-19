@@ -22,3 +22,11 @@
     color: $text-color;
   }
 }
+
+body .woocommerce-message {
+  border-top-color: #43A628;
+}
+
+body .woocommerce-message::before {
+  color: #43A628;
+}
