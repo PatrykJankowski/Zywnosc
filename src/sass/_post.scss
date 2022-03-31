@@ -16,9 +16,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin-top: $m !important;
 
     &--first {
-      margin-bottom: $m !important;
+      margin-top: 0 !important;
     }
 
     .price {

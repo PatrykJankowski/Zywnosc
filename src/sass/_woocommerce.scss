@@ -433,11 +433,18 @@ body.woocommerce-account .addresses .title .edit {
 }
 
 
-body .woocommerce ul.products li.product a img {
+body .woocommerce ul.products li.product a img, body.woocommerce ul.products li.product a img {
   //height: 254px;
   object-fit: contain;
+  height: 192px;
+  background: #fff;
 }
 
+.woocommerce .post__related-product img {
+  height: 192px;
+  object-fit: contain;
+  background: #fff;
+}
 
 
 
@@ -578,4 +585,10 @@ body.woocommerce table.shop_attributes tr:nth-child(2n) td, body.woocommerce tab
 //cross
 .woocommerce .cart-collaterals .cross-sells, .woocommerce-page .cart-collaterals .cross-sells {
   display: none;
+}
+
+
+.related .attachment-woocommerce_thumbnail {
+  max-height: 192px;
+  object-fit: contain;
 }

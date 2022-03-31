@@ -1,0 +1,32 @@
+body #ship-to-different-address-checkbox {
+  width: 14px;
+  margin: 0 10px 0 0;
+}
+
+body #ship-to-different-address .woocommerce-form__label-for-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+body .woocommerce .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label-for-checkbox {
+  display: flex !important;
+  align-items: center;
+}
+
+body .woocommerce .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label-for-checkbox .woocommerce-terms-and-conditions-checkbox-text {
+  flex-direction: column;
+}
+
+body .woocommerce .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label-for-checkbox .woocommerce-terms-and-conditions-checkbox-text .woocommerce-terms-and-conditions-link {
+  text-decoration: underline;
+}
+
+body .woocommerce .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label-for-checkbox, .woocommerce-form__input-checkbox {
+  width: 12px !important;
+  margin: 0 10px 0 0;
+}
+
+
+body .woocommerce .woocommerce-terms-and-conditions-wrapper .woocommerce-form__label-for-checkbox, .woocommerce-terms-and-conditions-checkbox-text {
+  display: flex;
+}

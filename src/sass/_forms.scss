@@ -289,3 +289,18 @@ body .noptin-form-footer .noptin-optin-field-wrapper:not(.noptin-optin-field-wra
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.is-form-style {
+  display: none;
+
+  @media (min-width: 992px) {
+    display: block;
+    bottom: 5px;
+  }
+}
+
+header {
+  .is-form-style {
+    margin-right: 20px;
+  }
+}

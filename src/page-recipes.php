@@ -38,6 +38,13 @@ $posts = new WP_Query($args);
     <div class="container">
 
         <div class="row">
+            <div class="col-12 mb-m">
+                <?php echo do_shortcode('[ivory-search id="1036" title="Przepisy"]'); ?>
+            </div>
+        </div>
+
+        <div class="row">
+
             <div class="col-lg-2">
                 <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="filter" class="recipes__filters">
                     <?php

@@ -24,7 +24,7 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <?php echo do_shortcode('[sale_products columns="5" order="asc"]'); ?>
+                <?php echo do_shortcode('[sale_products columns="5" per_page="60" order="dsc"]'); ?>
             </div>
         </div>
     </div>

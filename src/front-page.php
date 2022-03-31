@@ -82,14 +82,14 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
-                <div class="box">
+                <div class="box" style="background-image: url(<?php echo get_field('box_1_img') ?>);">
                     <p><?php echo get_field('box_1_subtitle') ?></p>
                     <h3 class="box__header"><?php echo get_field('box_1_title') ?></h3>
                     <a class="box__link" href="<?php echo get_field('box_1_link') ?>"><?php echo get_field('box_1_link_text') ?></a>
                 </div>
             </div>
             <div class="col-lg-6">
-                <div class="box box--box-2">
+                <div class="box" style="background-image: url(<?php echo get_field('box_2_img') ?>);">
                     <p><?php echo get_field('box_2_subtitle') ?></p>
                     <h3 class="box__header"><?php echo get_field('box_2_title') ?></h3>
                     <a class="box__link" href="<?php echo get_field('box_2_link') ?>"><?php echo get_field('box_2_link_text') ?></a>

@@ -33,6 +33,13 @@ $posts = new WP_Query($args);
 
 <section class="section pb-60">
     <div class="container">
+
+        <div class="row">
+            <div class="col-12 mb-m">
+                <?php echo do_shortcode('[ivory-search id="1035" title="Default Search Form"]'); ?>
+            </div>
+        </div>
+
         <div class="row">
 
         <?php while ($posts->have_posts()) : $posts->the_post(); ?>

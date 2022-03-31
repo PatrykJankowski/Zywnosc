@@ -25,9 +25,12 @@
 
     <?php wp_body_open(); ?>
 
+    <?php if (get_field('navbar_info', 53)): ?>
     <div class="navbar__bar">
-        5% rabatu na pierwsze zamowienie! Dostawa gratis od 250 zł
+        <?php echo get_field('navbar_info', 53) ?>
     </div>
+    <?php endif; ?>
+
     <header id="header" class="navbar">
         <div id="navbar__toggle" class="navbar__toggle" onclick="slideToggle()"><i class="navbar__toggle-icon"></i></div>
         <div class="container">
@@ -41,7 +44,7 @@
                         </a>
 
                         <div class="header__right">
-                            <?php echo do_shortcode('[wpdreams_ajaxsearchlite]'); ?>
+                            <?php echo do_shortcode('[ivory-search id="12011" title="Produkty"]'); ?>
 
                             <a href="/koszyk/">
                                 <div class="mini-cart">

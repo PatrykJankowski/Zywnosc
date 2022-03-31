@@ -42,7 +42,7 @@ function override_woocommerce_image_size_gallery_thumbnail( $size ) {
 
 
 add_filter( 'woocommerce_get_image_size_thumbnail', function( $size ) {
-    return array('width' => 300, 'height' => 310, 'crop' => 1, );
+    return array('width' => 300, 'height' => 310, 'crop' => 0, );
 } );
 
 
